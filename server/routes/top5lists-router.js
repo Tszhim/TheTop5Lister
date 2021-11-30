@@ -1,0 +1,23 @@
+const express = require('express')
+const router = express.Router()
+const auth = require('../auth')
+const Top5ListController = require('../controllers/top5list-controller')
+
+router.post('/top5list', auth.verify, Top5ListController.createTop5List)
+router.delete('/top5list/:id', auth.verify, Top5ListController.deleteTop5List)
+router.get('/top5list/:id', auth.verify, Top5ListController.getTop5ListById)
+router.post('/top5listpairs', auth.verify, Top5ListController.getTop5ListPairs)
+router.post('/top5listpairsAll', Top5ListController.getTop5ListPairsAll)
+router.post('/top5listpairsUser', Top5ListController.getTop5ListPairsUser)
+router.post('/top5listpairsComm', Top5ListController.getTop5ListPairsComm)
+router.get('/top5lists', auth.verify, Top5ListController.getTop5Lists)
+router.put('/top5list/:id', auth.verify, Top5ListController.updateTop5List)
+router.get('/top5listLike/:id', auth.verify, Top5ListController.LikeTop5ListById)
+router.get('/top5listUndoLike/:id', auth.verify, Top5ListController.UndoLikeTop5ListById)
+router.get('/top5listDislike/:id', auth.verify, Top5ListController.DislikeTop5ListById)
+router.get('/top5listUndoDislike/:id', auth.verify, Top5ListController.UndoDislikeTop5ListById)
+router.put('/top5listComment/:id', auth.verify, Top5ListController.addTop5ListComment)
+router.get('/top5listView/:id', auth.verify, Top5ListController.AddTop5ListViewById)
+router.put('/top5listPublish/:id', auth.verify, Top5ListController.publishTop5List)
+
+module.exports = router
