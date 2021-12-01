@@ -179,18 +179,20 @@ function ListCard(props) {
     if (store.isListNameEditActive) {
         cardStatus = true;
     }
+
+    console.log(idNamePair);
     let cardElement =
     <List>
         <ListItem
             id={idNamePair._id}
             key={idNamePair._id}
-            sx={{ marginTop: '0px', display: 'flex', p: 1}}
+            sx={{ marginTop: '0px', display: 'flex', p: 1, fontFamily: 'Arial, Helvetica, sans-serif'}}
             style={{ width: '100%'}}            
             style={{
                 fontSize: '20pt'
             }}
         >       <div style={{width: '50%', paddingLeft: '1%'}}>
-                    <Box sx={{ p: 1, flexGrow: 1 }} style={{fontSize:'15pt', fontWeight: 'bold'}}>{idNamePair.top5List.name}</Box>
+                    <Box sx={{ p: 1, flexGrow: 1 }} style={{fontSize:'18pt', fontWeight: 'bold'}}>{idNamePair.top5List.name}</Box>
                     <Box sx={{ p: 1, flexGrow: 1 }} style={{fontSize:'12pt', fontWeight: 'bold'}}>By: {idNamePair.top5List.userName}</Box>
                     <Box sx={{ p: 1 }} style={{fontSize: '12pt'}}>
                         <a href='#' onClick= {(event) => handleToggleEdit(event, idNamePair._id)}> Edit </a>
@@ -201,62 +203,74 @@ function ListCard(props) {
                     <Box sx={{ p: 1 }}>
                         <IconButton onClick={(event) => {
                             handleLikeList(event, idNamePair._id)
-                        }} aria-label='like'>
+                        }} aria-label='like' style={{marginLeft: '50%'}}>
                             <ThumbUp style={{fontSize:'24pt'}} />
                         </IconButton>
                         {idNamePair.top5List.likeCount}
-                    </Box>
 
-                    <Box sx={{ p: 1 }}>
                         <IconButton onClick={(event) => {
                             handleDisLikeList(event, idNamePair._id)
-                        }} aria-label='dislike'>
+                        }} aria-label='dislike' style={{marginLeft: '10%'}}>
                             <ThumbDown style={{fontSize:'24pt'}} />
                         </IconButton>
                         {idNamePair.top5List.dislikeCount}
-                    </Box>
 
-                    <Box sx={{ p: 1 }}>
                         <IconButton onClick={(event) => {
                             handleDeleteList(event, idNamePair._id)
-                        }} aria-label='delete'>
+                        }} aria-label='delete' style={{marginLeft: '10%'}}>
                             <DeleteIcon style={{fontSize:'24pt'}} />
                         </IconButton>
                     </Box>
-                    <Box sx={{ p: 1, flexGrow: 1 }}>{idNamePair.top5List.publishedDate}</Box>  
-                    <Box sx={{ p: 1, flexGrow: 1 }}>View {idNamePair.top5List.viewCount}</Box> 
+
+                    <Box sx={{ p: 1, flexGrow: 1 }}  style={{marginLeft: '50%', fontSize:'13pt', fontWeight: 'bold'}}> 
+                        <div style={{width: '50%'}}>
+                            Views: {idNamePair.top5List.viewCount}
+                        </div>
+                        <div style={{width: '30%', float: 'right'}}>
+                            <Button
+                                style={{marginLeft: '53%', position: "static"}}
+                                onClick={(event) => {
+                                handleClick(event, idNamePair._id)
+                                }
+                                } 
+                            >
+                            {open ? <ExpandLess /> : <ExpandMore />}    
+                            </Button> 
+                        </div>
+                    </Box> 
                     <Box sx={{ p: 1, flexGrow: 1 }}>{idNamePair.top5List.updatedDate}</Box> 
-                    <ListItemButton
-                        onClick={(event) => {
-                        handleClick(event, idNamePair._id)
-                        }
-                        } 
-                    >
-                    {open ? <ExpandLess /> : <ExpandMore />}    
-                    </ListItemButton> 
                 </div>
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>  
-          <div id="#item-list">
-          {
+            <List component="div" disablePadding>  
+            <div style={{width: '50%', float: 'left', marginLeft: '1.5%', backgroundColor: '#62a5b2', border: '1px solid black', borderRadius: '10px', fontSize: '26px'}}>
+            {
                 idNamePair.top5List.items.map((item, index) => (                                               
-                    <Box sx={{ p: 1, flexGrow: 1 }}>{item}</Box>                           
+                    <Box sx={{ p: 1, flexGrow: 1 }}>{(index+1) + ". " + item}</Box>                           
                 ))  
-          }
-          </div>
-          <div id="#comment-list">
-          {
-                idNamePair.top5List.comment.map((comment, index) => (                                               
-                    <Box sx={{ p: 1, flexGrow: 1 }}>{comment.commentText}  {comment.userName}</Box>                           
-                ))     
-          }
-          </div>
-          <TextField id="outlined-basic" label="Outlined" variant="outlined" onKeyPress={(event) => {
-                        handleCommentKeyPress(event, idNamePair._id)
-                    }} /> 
-        </List>
-      </Collapse>
+            }
+            </div>
+            <div style={{marginLeft: '54%'}} >
+                <List sx= {{ width: '100%', maxHeight: 170, overflow: 'auto'}}>
+                    {
+                        idNamePair.top5List.comment.map((comment) => (                                               
+                            <ListItem sx={{width: '95%', marginBottom: '1%', backgroundColor: '#387ca3', borderColor: '#387ca3', border: '0.25px solid', borderRadius: '10px'}}>
+                                <div style={{width: '100%', fontWeight: 'bold'}}>
+                                    {comment.userName}
+                                    <div style={{ fontWeight: 'normal'}}>
+                                        {comment.commentText} 
+                                     </div>
+                                </div>
+                            </ListItem>                           
+                        ))  
+                    } 
+                </List>
+                <TextField id="outlined-basic" sx={{width: '93%', marginLeft: '0%', marginTop: '0.8%'}} label="Add Comment" variant="outlined" size='small' onKeyPress={(event) => {
+                            handleCommentKeyPress(event, idNamePair._id)
+                        }} /> 
+            </div>
+            </List>
+        </Collapse>
     </List>    
     if (editActive) {
         cardElement =

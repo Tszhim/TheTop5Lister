@@ -171,30 +171,34 @@ export default function ToolBar() {
                             <Button 
                                 id='undo-button'
                                 onClick={handleLoadHomeList}
-                                variant="contained">
+                                variant="contained"
+                                disabled={store.isItemEditActive}>
                                 <Home />
                             </Button>
                             <Button 
                                 id='undo-button'
                                 onClick={handleLoadAllList}
-                                variant="contained">
+                                variant="contained"
+                                disabled={store.isItemEditActive}>
                                 <People />
                             </Button>
                             <Button 
                                 id='undo-button'
                                 onClick={handleLoadUserList}
-                                variant="contained">
+                                variant="contained"
+                                disabled={store.isItemEditActive}>
                                 <Person />
                             </Button>
                             <Button
                                 id='undo-button'
                                 onClick={handleLoadCommList}
-                                variant="contained">
+                                variant="contained"
+                                disabled={store.isItemEditActive}>
                                 <ArrowUpward />
                             </Button> 
                         </div>
                         <div style={{paddingLeft: '50px', width: '40%'}}>
-                            <TextField fullWidth id="outlined-basic" color= 'primary' label="Search" variant="outlined" onKeyPress={handleKeyPress}/>     
+                            <TextField fullWidth id="outlined-basic" color= 'primary' inputProps={{style: {color: 'white'}}} InputLabelProps={{style: {color: 'white'}}}label="Search" variant="outlined" onKeyPress={handleKeyPress}/>     
                         </div>
                         <div style={{paddingLeft: '260px'}}>
                             <MenuListComposition></MenuListComposition>

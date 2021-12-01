@@ -30,7 +30,7 @@ export default function RegisterScreen() {
     };
 
     return (
-            <Container component="main" maxWidth="xs">
+            <Container id="register-screen" component="main" maxWidth="xs">
                 <CssBaseline />
                 <Box
                     sx={{

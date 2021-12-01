@@ -5,6 +5,10 @@ import { Typography } from '@mui/material'
 import { GlobalStoreContext } from '../store/index.js'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Fab from '@mui/material/Fab';    
+import AddIcon from '@mui/icons-material/Add';
+
+import ToolBar from './ToolBar'
 
 /*
     This React component lets us edit a loaded list, which only
@@ -49,44 +53,50 @@ function WorkspaceScreen() {
     let editItems = "";
     if (store.currentList) {
         editItems = 
-            <List id="edit-items" sx={{ width: '100%', bgcolor: 'background.paper' }}>                
-                <TextField
-                    margin="normal"                            
-                    required
-                    fullWidth
-                    id={"name"}
-                    label={"name"}
-                    name="name"
-                    autoComplete="Top 5 List Item"
-                    className='name'                           
-                    defaultValue={store.currentList.name}
-                    inputProps={{style: {fontSize: 24}}}
-                    InputLabelProps={{style: {fontSize: 24}}}
-                    autoFocus
-                /> 
-                {
-                    store.currentList.items.map((item, index) => (                       
-                        <TextField
-                            margin="normal"                            
-                            required
-                            fullWidth
-                            id={"item-" + (index+1)}
-                            label={"Item #" + (index+1)}
-                            name="item"
-                            autoComplete="Top 5 List Item"
-                            className='top5-item'                           
-                            defaultValue={item}
-                            inputProps={{style: {fontSize: 24}}}
-                            InputLabelProps={{style: {fontSize: 24}}}
-                            autoFocus
-                        />                             
-                    ))                        
-                }
-                <div>
+            <List id="edit-items" sx={{ bgcolor: 'background.paper' }}>                
+                <div style={{width: '90%', marginLeft: '5%', backgroundColor: 'white', border: '2px solid white', borderRadius: '30px'}}>
+                    <TextField
+                        margin="normal"                            
+                        required
+                        sx={{width: '40%', marginLeft: '3%'}}
+                        size="small"
+                        id={"name"}
+                        label={"name"}
+                        name="name"
+                        autoComplete="Top 5 List Item"
+                        className='name'                           
+                        defaultValue={store.currentList.name}
+                        inputProps={{style: {fontSize: 20}}}
+                        InputLabelProps={{style: {fontSize: 18}}}
+                        autoFocus
+                    /> 
+                    <div style={{width: '90%', marginLeft: '3%'}}>
+                        {
+                            store.currentList.items.map((item, index) => (                       
+                                <TextField
+                                    margin="normal"                            
+                                    required
+                                    fullWidth
+                                    sx={{backgroundColor: "white"}}
+                                    size="normal"
+                                    id={"item-" + (index+1)}
+                                    label={"Item #" + (index+1)}
+                                    name="item"
+                                    autoComplete="Top 5 List Item"
+                                    className='top5-item'                           
+                                    defaultValue={item}
+                                    inputProps={{style: {fontSize: 22}}}
+                                    InputLabelProps={{style: {fontSize: 20}}}
+                                    autoFocus
+                                />                             
+                            ))                        
+                        }
+                    </div>
+                    <div style={{marginLeft: '80%'}}>
                         <Button
                             type="submit"
                             variant="contained"
-                            sx={{ mt: 3, mb: 2 }}
+                            sx={{ mt: 3, mb: 2, marginRight: '5%'}}
                             onClick={handleSave}
                         >
                             Save
@@ -100,21 +110,27 @@ function WorkspaceScreen() {
                         >
                             Publish
                         </Button>
+                    </div>
                 </div>
             </List>;
     }
     return (
         <div id="top5-workspace">
+            <ToolBar />
             <div id="workspace-edit">
-                <div id="edit-numbering">
-                    <div className="item-number"><Typography variant="h3">Name</Typography></div>
-                    <div className="item-number"><Typography variant="h3">1.</Typography></div>
-                    <div className="item-number"><Typography variant="h3">2.</Typography></div>
-                    <div className="item-number"><Typography variant="h3">3.</Typography></div>
-                    <div className="item-number"><Typography variant="h3">4.</Typography></div>
-                    <div className="item-number"><Typography variant="h3">5.</Typography></div>
-                </div>
                 {editItems}
+            </div>
+            <div id="list-selector-list2">
+                <Fab 
+                    color="primary" 
+                    aria-label="add"
+                    id="add-list-button"
+                    disabled={true}
+                    style={{background:'#4192a1' }}
+                >
+                    <AddIcon />
+                </Fab>
+                <Typography variant="h3" color='#9ac9d9'>Your Lists</Typography>
             </div>
         </div>
     )
