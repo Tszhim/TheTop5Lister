@@ -129,6 +129,7 @@ function ListCard(props) {
 
     function toggleEdit() {
         let newActive = !editActive;
+        console.log("a");
         if (newActive) {
             store.setIsListNameEditActive();
         }
@@ -203,7 +204,7 @@ function ListCard(props) {
                     <Box sx={{ p: 1 }}>
                         <IconButton onClick={(event) => {
                             handleLikeList(event, idNamePair._id)
-                        }} aria-label='like' style={{marginLeft: '50%'}}>
+                        }} aria-label='like' style={{marginLeft: '30%'}}>
                             <ThumbUp style={{fontSize:'24pt'}} />
                         </IconButton>
                         {idNamePair.top5List.likeCount}
@@ -222,7 +223,7 @@ function ListCard(props) {
                         </IconButton>
                     </Box>
 
-                    <Box sx={{ p: 1, flexGrow: 1 }}  style={{marginLeft: '50%', fontSize:'13pt', fontWeight: 'bold'}}> 
+                    <Box sx={{ p: 1, flexGrow: 1 }}  style={{marginLeft: '30%', fontSize:'13pt', fontWeight: 'bold'}}> 
                         <div style={{width: '50%'}}>
                             Views: {idNamePair.top5List.viewCount}
                         </div>

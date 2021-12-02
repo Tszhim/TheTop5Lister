@@ -403,7 +403,6 @@ function GlobalStoreContextProvider(props) {
                                                 //[{commentText:"test1", userName:"user1"}]);
         console.log("createNewList response: " + response);
         if (response.status === 201) {
-            tps.clearAllTransactions();
             let newList = response.data.top5List;
             storeReducer({
                 type: GlobalStoreActionType.CREATE_NEW_LIST,
@@ -469,7 +468,7 @@ function GlobalStoreContextProvider(props) {
         if (response.status === 200) {
             //store.loadIdNamePairs();
             console.log('store.deleteList ' + store.mode)
-            store.loadHomeLists(store.filteredString,store.sortedOption);
+            store.loadHomeLists(store.filteredString, store.sortedOption);
             /*
             if(store.mode == 0) {
                 store.loadHomeLists(store.filteredString,store.sortedOption);
@@ -511,7 +510,7 @@ function GlobalStoreContextProvider(props) {
                     type: GlobalStoreActionType.SET_CURRENT_LIST,
                     payload: top5List
                 });
-                history.push("/top5list/" + top5List._id);
+                //history.push("/top5list/" + top5List._id);
             //}
         }
     }

@@ -78,7 +78,7 @@ function WorkspaceScreen() {
                                     required
                                     fullWidth
                                     sx={{backgroundColor: "white"}}
-                                    size="normal"
+                                    size="small"
                                     id={"item-" + (index+1)}
                                     label={"Item #" + (index+1)}
                                     name="item"
@@ -120,17 +120,19 @@ function WorkspaceScreen() {
             <div id="workspace-edit">
                 {editItems}
             </div>
-            <div id="list-selector-list2">
+            <div id="list-selector-list2" style={{top: '95%'}}>
                 <Fab 
                     color="primary" 
                     aria-label="add"
                     id="add-list-button"
                     disabled={true}
-                    style={{background:'#4192a1' }}
+                    style={{background:'#4192a1'}}
+                    size='small'
+
                 >
                     <AddIcon />
                 </Fab>
-                <Typography variant="h3" color='#9ac9d9'>Your Lists</Typography>
+                <Typography variant="h4" color='#9ac9d9'>Your Lists</Typography>
             </div>
         </div>
     )

@@ -167,7 +167,7 @@ export default function ToolBar() {
             <AppBar position="static" style={{background:'#3c80a4' }}>
                 <ThemeProvider theme={theme}>
                     <Toolbar>
-                        <div>
+                        <div style= {{width: '25%'}}>
                             <Button 
                                 id='undo-button'
                                 onClick={handleLoadHomeList}
@@ -197,10 +197,10 @@ export default function ToolBar() {
                                 <ArrowUpward />
                             </Button> 
                         </div>
-                        <div style={{paddingLeft: '50px', width: '40%'}}>
-                            <TextField fullWidth id="outlined-basic" color= 'primary' inputProps={{style: {color: 'white'}}} InputLabelProps={{style: {color: 'white'}}}label="Search" variant="outlined" onKeyPress={handleKeyPress}/>     
+                        <div style={{paddingLeft: '10px', width: '40%'}}>
+                            <TextField fullWidth id="outlined-basic" size='small' color= 'primary' inputProps={{style: {color: 'white'}}} InputLabelProps={{style: {color: 'white'}}}label="Search" variant="outlined" onKeyPress={handleKeyPress}/>     
                         </div>
-                        <div style={{paddingLeft: '260px'}}>
+                        <div style={{paddingLeft: '230px'}}>
                             <MenuListComposition></MenuListComposition>
                         </div>
                     </Toolbar>

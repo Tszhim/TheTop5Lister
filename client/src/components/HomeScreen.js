@@ -66,12 +66,13 @@ const HomeScreen = () => {
                     aria-label="add"
                     id="add-list-button"
                     onClick={handleCreateNewList}
-                    style={{background:'#4192a1' }}
+                    style={{background:'#4192a1'}}
+                    size='small'
 
                 >
                     <AddIcon />
                 </Fab>
-                <Typography variant="h3" color='#9ac9d9'>Your Lists</Typography>
+                <Typography variant="h4" color='#9ac9d9'>Your Lists</Typography>
             </div>
         </div>)
 }
