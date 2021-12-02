@@ -384,7 +384,7 @@ function GlobalStoreContextProvider(props) {
             type: GlobalStoreActionType.CLOSE_CURRENT_LIST,
             payload: {}
         });
-        history.push("/");
+        store.loadHomeLists(store.filteredString, store.sortedOption);
     }
 
     // THIS FUNCTION CREATES A NEW LIST
@@ -481,7 +481,6 @@ function GlobalStoreContextProvider(props) {
             }
             */
         }
-        history.push('/');
     }
 
     store.deleteMarkedList = function () {
@@ -510,47 +509,9 @@ function GlobalStoreContextProvider(props) {
                     type: GlobalStoreActionType.SET_CURRENT_LIST,
                     payload: top5List
                 });
-                //history.push("/top5list/" + top5List._id);
+                history.push("/top5list/" + top5List._id);
             //}
         }
-    }
-
-    store.addMoveItemTransaction = function (start, end) {
-        let transaction = new MoveItem_Transaction(store, start, end);
-        tps.addTransaction(transaction);
-    }
-
-    store.addUpdateItemTransaction = function (index, newText) {
-        let oldText = store.currentList.items[index];
-        let transaction = new UpdateItem_Transaction(store, index, oldText, newText);
-        tps.addTransaction(transaction);
-    }
-
-    store.moveItem = function (start, end) {
-        start -= 1;
-        end -= 1;
-        if (start < end) {
-            let temp = store.currentList.items[start];
-            for (let i = start; i < end; i++) {
-                store.currentList.items[i] = store.currentList.items[i + 1];
-            }
-            store.currentList.items[end] = temp;
-        }
-        else if (start > end) {
-            let temp = store.currentList.items[start];
-            for (let i = start; i > end; i--) {
-                store.currentList.items[i] = store.currentList.items[i - 1];
-            }
-            store.currentList.items[end] = temp;
-        }
-
-        // NOW MAKE IT OFFICIAL
-        store.updateCurrentList();
-    }
-
-    store.updateItem = function (index, newItem) {
-        store.currentList.items[index] = newItem;
-        store.updateCurrentList();
     }
 
     store.updateCurrentList = async function () {
@@ -571,22 +532,6 @@ function GlobalStoreContextProvider(props) {
                 payload: store.currentList
             });
         }
-    }
-
-    store.undo = function () {
-        tps.undoTransaction();
-    }
-
-    store.redo = function () {
-        tps.doTransaction();
-    }
-
-    store.canUndo = function() {
-        return tps.hasTransactionToUndo();
-    }
-
-    store.canRedo = function() {
-        return tps.hasTransactionToRedo();
     }
 
     // THIS FUNCTION ENABLES THE PROCESS OF EDITING A LIST NAME
