@@ -65,10 +65,10 @@ const HomeScreen = () => {
                     color="primary" 
                     aria-label="add"
                     id="add-list-button"
+                    disabled={auth.loggedInAsGuest}
                     onClick={handleCreateNewList}
                     style={{background:'#4192a1'}}
                     size='small'
-
                 >
                     <AddIcon />
                 </Fab>

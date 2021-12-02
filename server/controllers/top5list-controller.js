@@ -1108,8 +1108,9 @@ AddTop5ListViewById = async (req, res) => {
         }
 
         // DOES THIS LIST BELONG TO THIS USER?
-        async function asyncFindUser(list) {
+        async function asyncAddView() {
             //User.findOne({ email: list.ownerEmail }, (err, user) => {
+            /*
             User.findOne({ _id: req.userId }, (err, user) => {
                 console.log("user._id: " + user._id);
                 console.log("req.userId: " + req.userId);
@@ -1142,8 +1143,22 @@ AddTop5ListViewById = async (req, res) => {
                     });
                 }
             });
+            */
+            top5List.viewCount = top5List.viewCount + 1;
+                top5List
+                    .save()
+                    .then(() => {
+                        return res.status(200).json({
+                            top5List: top5List
+                        })
+                    })
+                    .catch(error => {
+                        return res.status(400).json({
+                            errorMessage: 'Top 5 List View Not Incremented!'
+                        })
+                    })
         }
-        asyncFindUser(top5List);
+        asyncAddView();
     })   
 }
 

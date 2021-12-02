@@ -41,11 +41,10 @@ function WorkspaceScreen() {
         for (let i = 1; i <= 5; i++) {
             let item = document.getElementById("item-" + i);
             store.currentList.items[i-1] = item.value;
-        }  
+        }   
+
         //store.currentList.published = true;
         //store.currentList.publishedDate = new Date();
-        store.publishCurrentList();
-        store.closeCurrentList();
     }
 
     const { store } = useContext(GlobalStoreContext);

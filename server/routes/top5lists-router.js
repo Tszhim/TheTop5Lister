@@ -17,7 +17,7 @@ router.get('/top5listUndoLike/:id', auth.verify, Top5ListController.UndoLikeTop5
 router.get('/top5listDislike/:id', auth.verify, Top5ListController.DislikeTop5ListById)
 router.get('/top5listUndoDislike/:id', auth.verify, Top5ListController.UndoDislikeTop5ListById)
 router.put('/top5listComment/:id', auth.verify, Top5ListController.addTop5ListComment)
-router.get('/top5listView/:id', auth.verify, Top5ListController.AddTop5ListViewById)
+router.get('/top5listView/:id', Top5ListController.AddTop5ListViewById)
 router.put('/top5listPublish/:id', auth.verify, Top5ListController.publishTop5List)
 
 module.exports = router
