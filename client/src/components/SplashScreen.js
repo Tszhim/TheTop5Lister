@@ -40,7 +40,7 @@ export default function SplashScreen() {
            <div id="splash-buttons-wrapper">
                 <div id="splash-button-left">
                     New user? Sign up with a new account.
-                    <div style = {{paddingTop: '10%'}}>
+                    <div style = {{paddingTop: '15%'}}>
                         <Button id="splash-button" onClick={handleRegister}>
                             Register
                         </Button>
@@ -48,7 +48,7 @@ export default function SplashScreen() {
                 </div>
                 <div id="splash-button-middle">
                     For existing users: Sign in.
-                    <div style = {{paddingTop: '8%'}}>
+                    <div style = {{paddingTop: '12%'}}>
                         <Button id="splash-button" onClick={handleLogin}>
                             Login
                         </Button>
@@ -56,7 +56,7 @@ export default function SplashScreen() {
                 </div>
                 <div id="splash-button-right">
                     Don't want to sign up yet? Check out the site as a guest.
-                    <div style = {{paddingTop: '8%'}}>
+                    <div style = {{paddingTop: '7%'}}>
                         <Button id="splash-button" onClick={handleLoginAsGuest}>
                             Continue as guest
                         </Button>

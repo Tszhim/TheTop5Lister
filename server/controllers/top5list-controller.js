@@ -625,37 +625,6 @@ publishTop5ListById = async (req, res) => {
     console.log("publishTop5List: " + JSON.stringify(body));
     console.log("req.body.name, req.body.items: " + body.top5List.name + ", " + body.top5List.items);
 
-    // >> modified 120221
-    if (body.top5List.name == '' ||
-        body.top5List.items[0] == '' ||
-        body.top5List.items[1] == '' ||
-        body.top5List.items[2] == '' ||
-        body.top5List.items[3] == '' ||
-        body.top5List.items[4] == '') {
-        console.log("Please fill All List name and Item Names.");
-           
-        return res
-        .status(404)
-        .json({
-            errorMessage: "Missing list name / item name(s)."
-        })           
-    }
-    
-    const listInsensitive = [];
-    listInsensitive[0] = (body.top5List.items[0] + "").toUpperCase();
-    listInsensitive[1] = (body.top5List.items[1] + "").toUpperCase();
-    listInsensitive[2] = (body.top5List.items[2] + "").toUpperCase();
-    listInsensitive[3] = (body.top5List.items[3] + "").toUpperCase();
-    listInsensitive[4] = (body.top5List.items[4] + "").toUpperCase();
-    
-    const listWithoutDups = new Set(listInsensitive);
-    if (listWithoutDups.size != body.top5List.items.length) {
-        return res
-        .status(404)
-        .json({
-            errorMessage: "Item names cannot be repeated."
-        })  
-    }
      // << modified 120221 idNamePair.top5List.dislikeList.indexOf(auth.user.email) < 0
     if (!body) {
         return res.status(400).json({

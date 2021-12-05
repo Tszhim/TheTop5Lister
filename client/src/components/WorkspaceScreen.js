@@ -65,10 +65,40 @@ function WorkspaceScreen() {
         //}
     }
 
+    // >> modified 120421
+    function handleUpdateText(event) {
+        //alert('handleUpdateText');
+        let item = document.getElementById("name");
+        let listname = item.value;
+        
+        let listItems = []
+
+        item = document.getElementById("item-1");
+        listItems[0] = item.value;
+
+        item = document.getElementById("item-2");
+        listItems[1] = item.value;
+
+        item = document.getElementById("item-3");
+        listItems[2] = item.value;
+
+        item = document.getElementById("item-4");
+        listItems[3] = item.value;
+
+        item = document.getElementById("item-5");
+        listItems[4] = item.value;  
+        
+
+        store.setItemPublishActive(listname, listItems);
+    }
+    // << modified 120421
+
+    console.log('WorkspaceScreen store.itemPublishActive: ' + store.itemPublishActive);
+
     let editItems = "";
     if (store.currentList) {
         editItems = 
-            <List id="edit-items" sx={{ bgcolor: 'background.paper' }}>                
+            <List id="edit-items" sx={{ bgcolor: 'background.paper', paddingTop: '2%' }}>                
                 <div style={{width: '90%', marginLeft: '5%', backgroundColor: 'white', border: '2px solid white', borderRadius: '30px'}}>
                     <TextField
                         margin="normal"                            
@@ -84,6 +114,7 @@ function WorkspaceScreen() {
                         inputProps={{style: {fontSize: 20}}}
                         InputLabelProps={{style: {fontSize: 18}}}
                         autoFocus
+                        onChange={handleUpdateText}
                     /> 
                     <div style={{width: '90%', marginLeft: '3%'}}>
                         {
@@ -103,6 +134,7 @@ function WorkspaceScreen() {
                                     inputProps={{style: {fontSize: 22}}}
                                     InputLabelProps={{style: {fontSize: 20}}}
                                     autoFocus
+                                    onChange={handleUpdateText}
                                 />                             
                             ))                        
                         }
@@ -122,6 +154,7 @@ function WorkspaceScreen() {
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
                             onClick={handlePublish}
+                            disabled={!store.itemPublishActive}
                         >
                             Publish
                         </Button>

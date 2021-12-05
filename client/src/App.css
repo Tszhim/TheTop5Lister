@@ -56,7 +56,9 @@ body {
 }
 
 #splash-screen {
-  background-color: #4c94af;
+  background-image: linear-gradient(to bottom, #387ca3, 
+  #d7edfa
+  );
   color: white;
   font-size: 5vw;
   border-color: white;
@@ -65,7 +67,7 @@ body {
   border-radius: 0px;
   padding-top: 5%;
   padding-bottom: 5%;
-  height:80%;
+  height: 90%;
   vertical-align: center;
 }
 
@@ -77,7 +79,7 @@ body {
 #splash-title-left {
   width: 50%;
   float: left;
-  font-size: 70px;
+  font-size: 60px;
   padding-left: 5%;
   text-align: left;
 }
@@ -91,10 +93,11 @@ body {
 }
 
 #splash-title-info {
-  font-size: 34px;
+  font-size: 28px;
   margin-left: 50%;
-  padding-left: 10%;
+  padding-right: 2.5%;
   padding-top: 0.5%;
+  text-align: right;
 }
 
 #splash-buttons-wrapper {
@@ -129,52 +132,52 @@ body {
 }
 
 #splash-description-wrapper { 
-  background-color: white;
+  border-top: 2px solid white;
   color:#21485e;
   font-weight: bold;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   font-size: 20px;
-  height: 53.3%;
+  height: 50%;
 }
 
 #splash-description-box-left {
-  padding-left: 15%;
-  padding-right: 10%;
-  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-top: 8%;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   margin-left: 25%;
   margin-right: 10%;
-  border-color: #4baaa0;
+  border-color: #6dacba;
   border-width: 2px;
   border-style: solid;
   border-radius: 0px;
 }
 
 #splash-description-box-middle {
-  padding-left: 12%;
-  padding-right: 10%;
-  padding-top: 10%;
+  padding-left: 8%;
+  padding-right: 7%;
+  padding-top: 8%;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   margin-left: 15%;
   margin-right: 15%;
-  border-color: #4baaa0;
+  border-color: #6dacba;
   border-width: 2px;
   border-style: solid;
   border-radius: 0px;
 }
 
 #splash-description-box-right {
-  padding-left: 10%;
+  padding-left: 8%;
   padding-right: 5%;
-  padding-top: 10%;
+  padding-top: 8%;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   margin-left: 10%;
   margin-right: 20%;
-  border-color: #4baaa0;
+  border-color: #6dacba;
   border-width: 2px;
   border-style: solid;
   border-radius: 0px;

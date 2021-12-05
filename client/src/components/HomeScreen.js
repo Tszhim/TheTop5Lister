@@ -83,7 +83,6 @@ const HomeScreen = () => {
                 }
                 <MUIDeleteModal />
             </div>
-
             {
                 addListBar
             }

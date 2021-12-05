@@ -19,7 +19,7 @@ function Statusbar() {
     console.log('Status bar');
     return (
         <div id="list-selector-list2">
-            <Typography variant="h4">{text}</Typography>
+            <Typography variant="h4" color='#9ac9d9'>{text}</Typography>
         </div>
     );
 }

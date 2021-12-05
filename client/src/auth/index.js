@@ -122,7 +122,7 @@ function AuthContextProvider(props) {
         }
     }
 
-    auth.registerUser = async function(firstName, lastName, email, password, passwordVerify) {
+    auth.registerUser = async function(firstName, lastName, userName, email, password, passwordVerify) {
         /*
         const response = await api.registerUser(firstName, lastName, email, password, passwordVerify);      
         if (response.status === 200) {
@@ -136,7 +136,7 @@ function AuthContextProvider(props) {
         }*/
 
         try {
-            const response = await api.registerUser(firstName, lastName, email, password, passwordVerify);      
+            const response = await api.registerUser(firstName, lastName, userName, email, password, passwordVerify);      
             if (response.status === 200) {
                 authReducer({
                     type: AuthActionType.REGISTER_USER,
@@ -158,7 +158,7 @@ function AuthContextProvider(props) {
         }
     }
 
-    auth.loginUser = async function(email, password) {
+    auth.loginUser = async function(userName, password) {
         /*
         const response = await api.loginUser(email, password);
         if (response.status === 200) {
@@ -172,7 +172,7 @@ function AuthContextProvider(props) {
         }*/
         
         try {
-            const response = await api.loginUser(email, password);
+            const response = await api.loginUser(userName, password);
             if(response.status === 200) {
                 authReducer({
                     type: AuthActionType.LOGIN_USER,

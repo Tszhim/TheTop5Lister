@@ -20,6 +20,7 @@ export default function AppBanner() {
     const [anchorEl, setAnchorEl] = useState(null);
     const isMenuOpen = Boolean(anchorEl);
 
+    console.log("appbannerworkspace" + store.itemEditActive);
     const handleProfileMenuOpen = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -110,6 +111,7 @@ export default function AppBanner() {
                             aria-haspopup="true"
                             onClick={handleProfileMenuOpen}
                             color="inherit"
+                            disabled={store.isItemEditActive && store.isListNameEditActive}
                         >
                             { getAccountMenu(auth.loggedIn) }
                         </IconButton>
