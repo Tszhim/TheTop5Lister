@@ -10,10 +10,15 @@ import { Typography } from '@mui/material'
 function Statusbar() {
     const { store } = useContext(GlobalStoreContext);
     let text ="";
-    if (store.currentList)
-        text = store.currentList.name;
+    if (store.mode === 1 || store.mode === 2) {
+        text = store.filteredString + ' Lists';
+    }
+    else if (store.mode === 3) {
+        text = 'Community Lists';
+    }
+    console.log('Status bar');
     return (
-        <div id="top5-statusbar">
+        <div id="list-selector-list2">
             <Typography variant="h4">{text}</Typography>
         </div>
     );

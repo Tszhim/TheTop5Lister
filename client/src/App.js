@@ -10,7 +10,8 @@ import {
     RegisterScreen,
     Statusbar,
     WorkspaceScreen,
-    AccErrorModal
+    AccErrorModal,
+    ProcessErrorModal
 } from './components'
 /*
     This is our application's top-level component.
@@ -35,6 +36,7 @@ const App = () => {
                         <Route path="/register/" exact component={RegisterScreen} />
                         <Route path="/top5list/:id" exact component={WorkspaceScreen} />
                     </Switch>
+                    <ProcessErrorModal />
                     <AccErrorModal />
                 </GlobalStoreContextProvider>
             </AuthContextProvider>

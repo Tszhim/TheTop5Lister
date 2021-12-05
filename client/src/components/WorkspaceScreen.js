@@ -17,6 +17,8 @@ import ToolBar from './ToolBar'
     @author McKilla Gorilla
 */
 function WorkspaceScreen() {
+    const { store } = useContext(GlobalStoreContext);
+    
     function handleSave(event) {
         //alert('Save');
         let item = document.getElementById("name");
@@ -35,19 +37,33 @@ function WorkspaceScreen() {
 
     function handlePublish(event) {
         //alert('Publish');
+        
         let item = document.getElementById("name");
         store.currentList.name = item.value;
 
         for (let i = 1; i <= 5; i++) {
             let item = document.getElementById("item-" + i);
             store.currentList.items[i-1] = item.value;
-        }   
-
-        //store.currentList.published = true;
-        //store.currentList.publishedDate = new Date();
+        }
+        
+        //if(store.currentList.name == '' || 
+        //   store.currentList.items[1] == '' ||
+        //   store.currentList.items[2] == '' ||
+        //   store.currentList.items[3] == '' ||
+        //   store.currentList.items[4] == '' ||
+        //   store.currentList.items[5] == '') {
+        //       alert('Please fill all fields when publishing the list.');
+        //   }
+        //else {
+            //store.currentList.published = true;
+            //store.currentList.publishedDate = new Date();
+            
+            // >> modified 120221
+            store.publishCurrentList();
+            //store.closeCurrentList();
+            // << modified 120221
+        //}
     }
-
-    const { store } = useContext(GlobalStoreContext);
 
     let editItems = "";
     if (store.currentList) {

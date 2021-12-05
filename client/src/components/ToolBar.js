@@ -31,7 +31,7 @@ export default function ToolBar() {
             main: '#4192a1',
           },
           secondary: {
-            main: '#11cb5f',
+            main: '#91a7ab',
           },
         },
       });
@@ -172,28 +172,32 @@ export default function ToolBar() {
                                 id='undo-button'
                                 onClick={handleLoadHomeList}
                                 variant="contained"
-                                disabled={store.isItemEditActive}>
+                                disabled={store.isItemEditActive || auth.loggedInAsGuest}
+                                color={store.mode == 0 ? "primary": "secondary"}>
                                 <Home />
                             </Button>
                             <Button 
                                 id='undo-button'
                                 onClick={handleLoadAllList}
                                 variant="contained"
-                                disabled={store.isItemEditActive}>
+                                disabled={store.isItemEditActive}
+                                color={store.mode == 1 ? "primary": "secondary"}>
                                 <People />
                             </Button>
                             <Button 
                                 id='undo-button'
                                 onClick={handleLoadUserList}
                                 variant="contained"
-                                disabled={store.isItemEditActive}>
+                                disabled={store.isItemEditActive}
+                                color={store.mode == 2 ? "primary": "secondary"}>
                                 <Person />
                             </Button>
                             <Button
                                 id='undo-button'
                                 onClick={handleLoadCommList}
                                 variant="contained"
-                                disabled={store.isItemEditActive}>
+                                disabled={store.isItemEditActive}
+                                color={store.mode == 3 ? "primary": "secondary"}>
                                 <ArrowUpward />
                             </Button> 
                         </div>

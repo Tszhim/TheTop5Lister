@@ -146,7 +146,7 @@ export default function MenuListComposition() {
     }
 
     let item = document.getElementById("sortName");
-    item.innerText = 'Dislike';
+    item.innerText = 'Dislikes';
 
     handleClose();
   }

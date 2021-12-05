@@ -456,12 +456,11 @@ input {
   position: relative;
   max-width: 800px;
   max-height: 80vh;
-  background: var(--swatch-complement);
+  background: white;
   overflow: auto;
   cursor: default;
   border-width: 5px;
   border-radius: 10px;
-  border-style: groove;
 }
 
 .modal-dialog > * {
@@ -495,7 +494,8 @@ input {
 }
 
 .dialog-header {
-  font-size: 24pt;
+  font-size: 20pt;
+  text-align: center;
 }
 
 #close-modal-button {

@@ -11,6 +11,7 @@ import Statusbar from './Statusbar'
 import Top5Item from './Top5Item'
 import WorkspaceScreen from './WorkspaceScreen'
 import AccErrorModal from './AccErrorModal'
+import ProcessErrorModal from './ProcessErrorModal'
 /*
     This serves as a module so that we can import
     all the other components as we wish.
@@ -30,4 +31,5 @@ export {
     Statusbar, 
     Top5Item, 
     WorkspaceScreen,
-    AccErrorModal }
+    AccErrorModal,
+    ProcessErrorModal }

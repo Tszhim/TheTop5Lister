@@ -11,6 +11,8 @@ import Typography from '@mui/material/Typography'
 import ToolBar from './ToolBar'
 
 import AuthContext from '../auth'
+import Statusbar from './Statusbar.js'
+
 
 /*
     This React component lists all the top5 lists in the UI.
@@ -25,7 +27,7 @@ const HomeScreen = () => {
         if (auth.loggedIn)
             store.loadHomeLists(store.filteredString, store.sortedOption); 
         else if (auth.loggedInAsGuest)
-            store.loadAllLists(store.filteredString, store.sortedOption); 
+            store.loadCommLists(store.filteredString, store.sortedOption); 
     }, []);
 
     function handleCreateNewList() {
@@ -48,6 +50,28 @@ const HomeScreen = () => {
             }
             </List>;
     }
+
+    let addListBar = "";
+    if(store.mode === 0) {
+        addListBar = 
+        <div id="list-selector-list2">
+                <Fab 
+                    color="primary" 
+                    aria-label="add"
+                    id="add-list-button"
+                    onClick={handleCreateNewList}
+                    style={{background:'#4192a1'}}
+                    size='small'
+
+                >
+                    <AddIcon />
+                </Fab>
+                <Typography variant="h4" color='#9ac9d9'>Your Lists</Typography>
+            </div>;
+    } else {
+        addListBar = <Statusbar />;
+    }
+
     return (
         <div id="top5-list-selector">
             <div id="list-selector-heading">
@@ -60,20 +84,10 @@ const HomeScreen = () => {
                 <MUIDeleteModal />
             </div>
 
-            <div id="list-selector-list2">
-                <Fab 
-                    color="primary" 
-                    aria-label="add"
-                    id="add-list-button"
-                    disabled={auth.loggedInAsGuest}
-                    onClick={handleCreateNewList}
-                    style={{background:'#4192a1'}}
-                    size='small'
-                >
-                    <AddIcon />
-                </Fab>
-                <Typography variant="h4" color='#9ac9d9'>Your Lists</Typography>
-            </div>
+            {
+                addListBar
+            }
+            
         </div>)
 }
 

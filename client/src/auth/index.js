@@ -210,6 +210,7 @@ function AuthContextProvider(props) {
                 authReducer({
                     type: AuthActionType.LOGOUT_USER
                 })
+                //store.logoutClear();
             }
         }
         catch(err) {
@@ -239,6 +240,7 @@ function AuthContextProvider(props) {
             type: AuthActionType.LOGIN_USER_AS_GUEST
         });
         history.push("/");
+        
     }
 
     return (
