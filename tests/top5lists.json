@@ -1,0 +1,3513 @@
+[{
+  "_id": {
+    "$oid": "61adc73ca2c89f1988571bef"
+  },
+  "items": [
+    "Fish",
+    "Chicken",
+    "Lamb",
+    "Goat",
+    "Shrimp"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [],
+  "name": "Animals to Eat",
+  "ownerEmail": "absaad@gmail.com",
+  "userName": "absaad",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-02T08:18:04.840Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:13:05.787Z"
+  },
+  "__v": 3,
+  "publishedDate": {
+    "$date": "2021-12-02T08:18:24.976Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc750a2c89f1988571c00"
+  },
+  "items": [
+    "Chicken",
+    "Cow",
+    "Fish",
+    "Lamb",
+    "Goat"
+  ],
+  "likeList": [
+    "absalem@email.com",
+    "adit.anand03@gmail.com",
+    "jattam@gmail.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com",
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [
+    "afurey@email.com",
+    "a@gmail.com"
+  ],
+  "name": "Animals to Eat",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61adc750a2c89f1988571c02"
+      },
+      "itemName": "Chicken",
+      "score": 31
+    },
+    {
+      "_id": {
+        "$oid": "61adc879a2c89f1988571ce1"
+      },
+      "itemName": "Cow",
+      "score": 19
+    },
+    {
+      "_id": {
+        "$oid": "61adc750a2c89f1988571c01"
+      },
+      "itemName": "Fish",
+      "score": 13
+    },
+    {
+      "_id": {
+        "$oid": "61adc750a2c89f1988571c03"
+      },
+      "itemName": "Lamb",
+      "score": 12
+    },
+    {
+      "_id": {
+        "$oid": "61adc750a2c89f1988571c04"
+      },
+      "itemName": "Goat",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adcb35a2c89f1988571ef7"
+      },
+      "itemName": "Pig",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adcc38a2c89f1988572010"
+      },
+      "itemName": "Tuna",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc750a2c89f1988571c05"
+      },
+      "itemName": "Shrimp",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adcb35a2c89f1988571ef8"
+      },
+      "itemName": "Alligator",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adca24a2c89f1988571dea"
+      },
+      "itemName": "Ants",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adc879a2c89f1988571ce2"
+      },
+      "itemName": "Camel",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adc879a2c89f1988571ce3"
+      },
+      "itemName": "Duck",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4c3be9086529b4928519"
+      },
+      "itemName": "Salmon",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adca24a2c89f1988571deb"
+      },
+      "itemName": "Clam",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 7,
+  "dislikeCount": 2,
+  "viewCount": 11,
+  "updatedDate": {
+    "$date": "2021-12-06T17:45:31.143Z"
+  },
+  "comment": [
+    {
+      "_id": {
+        "$oid": "61ae3dbbe9086529b4927e63"
+      },
+      "commentText": "Why did everybody put fish? What type of fish?",
+      "userName": "ajeong"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-12-02T08:18:24.981Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:55:52.104Z"
+  },
+  "__v": 16
+},{
+  "_id": {
+    "$oid": "61adc753a2c89f1988571c12"
+  },
+  "items": [
+    "How to Kill a Mockingbird",
+    "The Chosen",
+    "Wuthering Heights",
+    "Harry Potter",
+    "Diary of a Wimpy Kid"
+  ],
+  "likeList": [
+    "absaad@gmail.com",
+    "adit.anand03@gmail.com",
+    "afurey@email.com",
+    "a@gmail.com",
+    "jon@gmail.com"
+  ],
+  "dislikeList": [
+    "absalem@email.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Books",
+  "ownerEmail": "absaad@gmail.com",
+  "userName": "absaad",
+  "published": true,
+  "likeCount": 5,
+  "dislikeCount": 2,
+  "communityList": false,
+  "viewCount": 4,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-03T08:18:27.368Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:13:06.145Z"
+  },
+  "__v": 8,
+  "publishedDate": {
+    "$date": "2021-12-03T08:19:06.173Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc77aa2c89f1988571c1f"
+  },
+  "items": [
+    "Cosmos",
+    "Doraemon",
+    "How to Kill a Mockingbird",
+    "The Disposessed",
+    "An Inspector Calls"
+  ],
+  "likeList": [
+    "adit.anand03@gmail.com",
+    "afurey@email.com"
+  ],
+  "dislikeList": [
+    "absalem@email.com",
+    "a@gmail.com",
+    "jattam@gmail.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com",
+    "sameereal@gmail.com"
+  ],
+  "name": "Books",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61ae4ad7e9086529b49283de"
+      },
+      "itemName": "Cosmos",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4374e9086529b492816f"
+      },
+      "itemName": "Doraemon",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc77aa2c89f1988571c20"
+      },
+      "itemName": "How to Kill a Mockingbird",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc8aea2c89f1988571cff"
+      },
+      "itemName": "The Disposessed",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc8aea2c89f1988571d00"
+      },
+      "itemName": "An Inspector Calls",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adc77aa2c89f1988571c21"
+      },
+      "itemName": "The Chosen",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4ad7e9086529b49283df"
+      },
+      "itemName": "The Giver",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4374e9086529b4928170"
+      },
+      "itemName": "harry potter",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4ad7e9086529b49283e0"
+      },
+      "itemName": "Atomic Habits",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc77aa2c89f1988571c24"
+      },
+      "itemName": "Diary of a Wimpy Kid",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc77aa2c89f1988571c23"
+      },
+      "itemName": "Harry Potter",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4374e9086529b4928171"
+      },
+      "itemName": "Spice and Wolf",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc8aea2c89f1988571d01"
+      },
+      "itemName": "The Importance of Being Earnest",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc77aa2c89f1988571c22"
+      },
+      "itemName": "Wuthering Heights",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4374e9086529b4928172"
+      },
+      "itemName": "Mushoku Tensei",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adc8aea2c89f1988571d02"
+      },
+      "itemName": "Return of the Spirit",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4ad7e9086529b49283e1"
+      },
+      "itemName": "Great Expectations",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae4374e9086529b4928173"
+      },
+      "itemName": "To Kill a Mockingbird",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 2,
+  "dislikeCount": 7,
+  "viewCount": 17,
+  "updatedDate": {
+    "$date": "2021-12-06T17:39:35.759Z"
+  },
+  "comment": [
+    {
+      "_id": {
+        "$oid": "61ae3f6ae9086529b4927f27"
+      },
+      "commentText": "Never heard of half of these",
+      "userName": "jattam"
+    },
+    {
+      "_id": {
+        "$oid": "61ae3dcce9086529b4927e6a"
+      },
+      "commentText": "Not a fan of these books.",
+      "userName": "ajeong"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-12-03T08:19:06.177Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:41.872Z"
+  },
+  "__v": 16
+},{
+  "_id": {
+    "$oid": "61adc77ba2c89f1988571c31"
+  },
+  "items": [
+    "Saudi Arabia",
+    "Palestine",
+    "Pakistan",
+    "Iraq",
+    "Turkey"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [
+    "jon@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "name": "Countries to Visit",
+  "ownerEmail": "absaad@gmail.com",
+  "userName": "absaad",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 2,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-04T08:19:07.329Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:59.887Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-04T08:19:41.072Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc79da2c89f1988571c3e"
+  },
+  "items": [
+    "Japan",
+    "Korea",
+    "Germany",
+    "India",
+    "Ireland"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "jattam@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [
+    "absalem@email.com",
+    "adit.anand03@gmail.com",
+    "afurey@email.com",
+    "jon@gmail.com",
+    "sameereal@gmail.com"
+  ],
+  "name": "Countries to Visit",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61adcbc6a2c89f1988571f73"
+      },
+      "itemName": "Japan",
+      "score": 11
+    },
+    {
+      "_id": {
+        "$oid": "61ae4121e9086529b492801c"
+      },
+      "itemName": "Korea",
+      "score": 10
+    },
+    {
+      "_id": {
+        "$oid": "61adc8caa2c89f1988571d21"
+      },
+      "itemName": "Germany",
+      "score": 7
+    },
+    {
+      "_id": {
+        "$oid": "61adc8caa2c89f1988571d1e"
+      },
+      "itemName": "India",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adcbc6a2c89f1988571f70"
+      },
+      "itemName": "Ireland",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4c63e9086529b4928535"
+      },
+      "itemName": "Russia",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc79da2c89f1988571c3f"
+      },
+      "itemName": "Saudi Arabia",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc8caa2c89f1988571d1f"
+      },
+      "itemName": "Mali",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adc79da2c89f1988571c40"
+      },
+      "itemName": "Palestine",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adcbc6a2c89f1988571f71"
+      },
+      "itemName": "Spain",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adc8caa2c89f1988571d20"
+      },
+      "itemName": "Cuba",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4121e9086529b492801d"
+      },
+      "itemName": "Hong Kong",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adcbc6a2c89f1988571f72"
+      },
+      "itemName": "New Zealand",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4c63e9086529b4928536"
+      },
+      "itemName": "Norway",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc79da2c89f1988571c41"
+      },
+      "itemName": "Pakistan",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4af9e9086529b49283fb"
+      },
+      "itemName": "Singapore",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4c63e9086529b4928537"
+      },
+      "itemName": "Brazil",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4121e9086529b492801e"
+      },
+      "itemName": "Greenland",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adc79da2c89f1988571c42"
+      },
+      "itemName": "Iraq",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4af9e9086529b49283fc"
+      },
+      "itemName": "Sweden",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4121e9086529b492801f"
+      },
+      "itemName": "Bangladesh",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae4af9e9086529b49283fd"
+      },
+      "itemName": "Finland",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61adc8caa2c89f1988571d22"
+      },
+      "itemName": "Serbia",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61adc79da2c89f1988571c43"
+      },
+      "itemName": "Turkey",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 4,
+  "dislikeCount": 5,
+  "viewCount": 10,
+  "updatedDate": {
+    "$date": "2021-12-06T17:46:11.254Z"
+  },
+  "comment": [
+    {
+      "_id": {
+        "$oid": "61ae4249e9086529b492814b"
+      },
+      "commentText": "Wow a lot of people put Germany",
+      "userName": "jchan"
+    },
+    {
+      "_id": {
+        "$oid": "61ae3f89e9086529b4927f2e"
+      },
+      "commentText": "I've been to India and Ireland, they're really great spots to go on vacation to",
+      "userName": "jattam"
+    },
+    {
+      "_id": {
+        "$oid": "61ae3dd6e9086529b4927e71"
+      },
+      "commentText": "Interesting places.",
+      "userName": "ajeong"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-12-04T08:19:41.075Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:42.392Z"
+  },
+  "__v": 21
+},{
+  "_id": {
+    "$oid": "61adc79ea2c89f1988571c50"
+  },
+  "items": [
+    "Gyro",
+    "Burgers",
+    "Ice Cream",
+    "Biryani",
+    "Sushi"
+  ],
+  "likeList": [
+    "absaad@gmail.com",
+    "a@gmail.com"
+  ],
+  "dislikeList": [
+    "absalem@email.com",
+    "adit.anand03@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Foods",
+  "ownerEmail": "absaad@gmail.com",
+  "userName": "absaad",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 3,
+  "communityList": false,
+  "viewCount": 1,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-05T08:19:42.509Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:12:59.996Z"
+  },
+  "__v": 8,
+  "publishedDate": {
+    "$date": "2021-12-05T08:20:12.591Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc7bca2c89f1988571c5f"
+  },
+  "items": [
+    "Gyro",
+    "Rice",
+    "Sushi",
+    "Pizza",
+    "Soylent"
+  ],
+  "likeList": [
+    "afurey@email.com",
+    "a@gmail.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [
+    "absalem@email.com",
+    "adit.anand03@gmail.com",
+    "jattam@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "name": "Foods",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61adc7bca2c89f1988571c60"
+      },
+      "itemName": "Gyro",
+      "score": 9
+    },
+    {
+      "_id": {
+        "$oid": "61ae4136e9086529b492803a"
+      },
+      "itemName": "Rice",
+      "score": 8
+    },
+    {
+      "_id": {
+        "$oid": "61adc7bca2c89f1988571c64"
+      },
+      "itemName": "Sushi",
+      "score": 6
+    },
+    {
+      "_id": {
+        "$oid": "61adc8eaa2c89f1988571d3c"
+      },
+      "itemName": "Pizza",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae438ce9086529b492818d"
+      },
+      "itemName": "Soylent",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4136e9086529b4928039"
+      },
+      "itemName": "Tomato",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc7bca2c89f1988571c61"
+      },
+      "itemName": "Burgers",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b11e9086529b4928419"
+      },
+      "itemName": "Ramen",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4136e9086529b492803b"
+      },
+      "itemName": "Egg",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc7bca2c89f1988571c62"
+      },
+      "itemName": "Ice Cream",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc8eaa2c89f1988571d3d"
+      },
+      "itemName": "Koshary",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b11e9086529b492841a"
+      },
+      "itemName": "Poke",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae438ce9086529b492818e"
+      },
+      "itemName": "Tofu",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc8eaa2c89f1988571d3e"
+      },
+      "itemName": "Baklava",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adc7bca2c89f1988571c63"
+      },
+      "itemName": "Biryani",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b11e9086529b492841b"
+      },
+      "itemName": "Burrito",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4136e9086529b492803c"
+      },
+      "itemName": "Pork",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae438ce9086529b492818f"
+      },
+      "itemName": "Spam",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae438ce9086529b4928190"
+      },
+      "itemName": "Eggs",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61adc8eaa2c89f1988571d3f"
+      },
+      "itemName": "Mashi",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae4136e9086529b492803d"
+      },
+      "itemName": "Onions",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b11e9086529b492841c"
+      },
+      "itemName": "Pasta",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 5,
+  "dislikeCount": 4,
+  "viewCount": 21,
+  "updatedDate": {
+    "$date": "2021-12-06T17:40:33.440Z"
+  },
+  "comment": [
+    {
+      "_id": {
+        "$oid": "61ae4256e9086529b4928150"
+      },
+      "commentText": "Rice needs to be higher",
+      "userName": "jchan"
+    },
+    {
+      "_id": {
+        "$oid": "61ae3edde9086529b4927ef5"
+      },
+      "commentText": "What is koshary?",
+      "userName": "jattam"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-12-05T08:20:12.593Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:44.045Z"
+  },
+  "__v": 15
+},{
+  "_id": {
+    "$oid": "61adc7bea2c89f1988571c71"
+  },
+  "items": [
+    "Legend of Zelda: Ocarina of Time",
+    "Super Smash Bros: Ultimate",
+    "MGS3",
+    "Minecraft",
+    "Legend of Zelda: Skyward Sword"
+  ],
+  "likeList": [
+    "absaad@gmail.com",
+    "afurey@email.com",
+    "a@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Games",
+  "ownerEmail": "absaad@gmail.com",
+  "userName": "absaad",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-01T08:20:14.424Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:30:11.153Z"
+  },
+  "__v": 4,
+  "publishedDate": {
+    "$date": "2021-12-01T08:21:09.911Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc7f5a2c89f1988571c7e"
+  },
+  "items": [
+    "Valorant",
+    "Dark Souls",
+    "Goldeneye",
+    "League of Legends",
+    "Legend of Zelda: Ocarina of Time"
+  ],
+  "likeList": [
+    "absalem@email.com",
+    "adit.anand03@gmail.com",
+    "a@gmail.com"
+  ],
+  "dislikeList": [
+    "jattam@gmail.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com",
+    "sameereal@gmail.com"
+  ],
+  "name": "Games",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61ae4002e9086529b4927f7e"
+      },
+      "itemName": "Valorant",
+      "score": 7
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b2ee9086529b4928438"
+      },
+      "itemName": "Dark Souls",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adcba9a2c89f1988571f52"
+      },
+      "itemName": "Goldeneye",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4c7de9086529b4928553"
+      },
+      "itemName": "League of Legends",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc7f5a2c89f1988571c7f"
+      },
+      "itemName": "Legend of Zelda: Ocarina of Time",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4002e9086529b4927f7f"
+      },
+      "itemName": "Pokemon",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4002e9086529b4927f7d"
+      },
+      "itemName": "TFT",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4c7de9086529b4928554"
+      },
+      "itemName": "Genshin Impact",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adcba9a2c89f1988571f53"
+      },
+      "itemName": "Mortal Kombat",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adc7f5a2c89f1988571c80"
+      },
+      "itemName": "Super Smash Bros: Ultimate",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b2ee9086529b4928439"
+      },
+      "itemName": "Undertale",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adcba9a2c89f1988571f54"
+      },
+      "itemName": "Call of Duty",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc7f5a2c89f1988571c81"
+      },
+      "itemName": "MGS3",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adc7f5a2c89f1988571c82"
+      },
+      "itemName": "Minecraft",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b2ee9086529b492843a"
+      },
+      "itemName": "Pokemon Platinum",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adcba9a2c89f1988571f55"
+      },
+      "itemName": "Mario Kart",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4002e9086529b4927f80"
+      },
+      "itemName": "Osu",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b2ee9086529b492843b"
+      },
+      "itemName": "Pokemon HGSS",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adc7f5a2c89f1988571c83"
+      },
+      "itemName": "Legend of Zelda: Skyward Sword",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61adcba9a2c89f1988571f56"
+      },
+      "itemName": "Pong",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae4c7de9086529b4928555"
+      },
+      "itemName": "Super Smash Bros",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae4b2ee9086529b492843c"
+      },
+      "itemName": "Super Smash Bros Ultimate",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 3,
+  "dislikeCount": 5,
+  "viewCount": 8,
+  "updatedDate": {
+    "$date": "2021-12-06T17:46:37.755Z"
+  },
+  "comment": [
+    {
+      "_id": {
+        "$oid": "61ae3f9ce9086529b4927f39"
+      },
+      "commentText": "Don't really like these",
+      "userName": "jattam"
+    },
+    {
+      "_id": {
+        "$oid": "61ae3de5e9086529b4927e78"
+      },
+      "commentText": "Never played any of these, have to check them out!",
+      "userName": "ajeong"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-12-01T08:21:09.914Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:44.514Z"
+  },
+  "__v": 14
+},{
+  "_id": {
+    "$oid": "61adc838a2c89f1988571cd0"
+  },
+  "items": [
+    "Chicken",
+    "Cow",
+    "Goat",
+    "Camel",
+    "Duck"
+  ],
+  "likeList": [
+    "absalem@email.com",
+    "a@gmail.com",
+    "jon@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Animals to Eat",
+  "ownerEmail": "absalem@email.com",
+  "userName": "absalem",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 3,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-11-30T08:22:16.755Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:01:18.648Z"
+  },
+  "__v": 8,
+  "publishedDate": {
+    "$date": "2021-11-30T08:23:21.873Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc87ea2c89f1988571cf0"
+  },
+  "items": [
+    "The Disposessed",
+    "An Inspector Calls",
+    "The Importance of Being Earnest",
+    "Return of the Spirit",
+    "Harry Potter"
+  ],
+  "likeList": [
+    "a@gmail.com"
+  ],
+  "dislikeList": [
+    "afurey@email.com"
+  ],
+  "name": "Books",
+  "ownerEmail": "absalem@email.com",
+  "userName": "absalem",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 5,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-11-28T08:23:26.787Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:58:05.489Z"
+  },
+  "__v": 3,
+  "publishedDate": {
+    "$date": "2021-11-28T08:24:14.487Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc8afa2c89f1988571d0f"
+  },
+  "items": [
+    "India",
+    "Mali",
+    "Cuba",
+    "Germany",
+    "Serbia"
+  ],
+  "likeList": [
+    "adit.anand03@gmail.com",
+    "a@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Countries to Visit",
+  "ownerEmail": "absalem@email.com",
+  "userName": "absalem",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 3,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-11-27T08:24:15.975Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:30:15.408Z"
+  },
+  "__v": 3,
+  "publishedDate": {
+    "$date": "2021-11-27T08:24:42.932Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc8cca2c89f1988571d2f"
+  },
+  "items": [
+    "Pizza",
+    "Gyro",
+    "Koshary",
+    "Baklava",
+    "Mashi"
+  ],
+  "likeList": [
+    "absalem@email.com",
+    "afurey@email.com",
+    "a@gmail.com"
+  ],
+  "dislikeList": [
+    "adit.anand03@gmail.com",
+    "jon@gmail.com"
+  ],
+  "name": "Foods",
+  "ownerEmail": "absalem@email.com",
+  "userName": "absalem",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 2,
+  "communityList": false,
+  "viewCount": 7,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:24:44.179Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:01:19.652Z"
+  },
+  "__v": 6,
+  "publishedDate": {
+    "$date": "2021-12-06T08:25:14.226Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc8eba2c89f1988571d4c"
+  },
+  "items": [
+    "Python",
+    "Java",
+    "C++",
+    "C",
+    "MIPS"
+  ],
+  "likeList": [],
+  "dislikeList": [
+    "a@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Programming Languages",
+  "ownerEmail": "absalem@email.com",
+  "userName": "absalem",
+  "published": true,
+  "likeCount": 0,
+  "dislikeCount": 2,
+  "communityList": false,
+  "viewCount": 2,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:25:15.760Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:13:04.220Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:25:44.054Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adc908a2c89f1988571d59"
+  },
+  "items": [
+    "Java",
+    "Python",
+    "Javascript",
+    "C++",
+    "Kotlin"
+  ],
+  "likeList": [
+    "absalem@email.com",
+    "adit.anand03@gmail.com",
+    "a@gmail.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [
+    "jattam@gmail.com",
+    "sameereal@gmail.com"
+  ],
+  "name": "Programming Languages",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61adc908a2c89f1988571d5b"
+      },
+      "itemName": "Java",
+      "score": 25
+    },
+    {
+      "_id": {
+        "$oid": "61adc908a2c89f1988571d5a"
+      },
+      "itemName": "Python",
+      "score": 23
+    },
+    {
+      "_id": {
+        "$oid": "61adca93a2c89f1988571e48"
+      },
+      "itemName": "Javascript",
+      "score": 10
+    },
+    {
+      "_id": {
+        "$oid": "61adc908a2c89f1988571d5c"
+      },
+      "itemName": "C++",
+      "score": 8
+    },
+    {
+      "_id": {
+        "$oid": "61adcb81a2c89f1988571f38"
+      },
+      "itemName": "Kotlin",
+      "score": 7
+    },
+    {
+      "_id": {
+        "$oid": "61adcb81a2c89f1988571f37"
+      },
+      "itemName": "Swift",
+      "score": 7
+    },
+    {
+      "_id": {
+        "$oid": "61adca93a2c89f1988571e47"
+      },
+      "itemName": "C#",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adc908a2c89f1988571d5d"
+      },
+      "itemName": "C",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adc908a2c89f1988571d5e"
+      },
+      "itemName": "MIPS",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 6,
+  "dislikeCount": 2,
+  "viewCount": 8,
+  "updatedDate": {
+    "$date": "2021-12-06T17:41:43.818Z"
+  },
+  "comment": [
+    {
+      "_id": {
+        "$oid": "61ae4412e9086529b492824e"
+      },
+      "commentText": "Where is Kotlin at",
+      "userName": "lincolnnguyen18"
+    },
+    {
+      "_id": {
+        "$oid": "61ae4239e9086529b492813e"
+      },
+      "commentText": "Java is the best language for sure",
+      "userName": "jchan"
+    },
+    {
+      "_id": {
+        "$oid": "61ae3ed4e9086529b4927eee"
+      },
+      "commentText": "Generic boring list.",
+      "userName": "jattam"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-12-06T08:25:44.057Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:45.619Z"
+  },
+  "__v": 16
+},{
+  "_id": {
+    "$oid": "61adca06a2c89f1988571ddb"
+  },
+  "items": [
+    "Lamb",
+    "Chicken",
+    "Fish",
+    "Ants",
+    "Clam"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "jon@gmail.com"
+  ],
+  "dislikeList": [
+    "rahul@sbu.com"
+  ],
+  "name": "Animals to Eat",
+  "ownerEmail": "adit.anand03@gmail.com",
+  "userName": "adit-adand",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:29:58.887Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:02Z"
+  },
+  "__v": 4,
+  "publishedDate": {
+    "$date": "2021-12-06T08:30:28.866Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adca25a2c89f1988571df8"
+  },
+  "items": [
+    "Your Name",
+    "The Dark Knight",
+    "Harry Potter",
+    "Inception",
+    "Interstellar"
+  ],
+  "likeList": [
+    "adit.anand03@gmail.com",
+    "a@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [],
+  "name": "Movies",
+  "ownerEmail": "adit.anand03@gmail.com",
+  "userName": "adit-adand",
+  "published": true,
+  "likeCount": 4,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:30:29.892Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:01.222Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:31:06.144Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adca4aa2c89f1988571e05"
+  },
+  "items": [
+    "Just Mercy",
+    "Shaolin Soccer",
+    "Spiderman: No Way Home",
+    "Your Name",
+    "Black Panther"
+  ],
+  "likeList": [
+    "afurey@email.com"
+  ],
+  "dislikeList": [
+    "adit.anand03@gmail.com",
+    "a@gmail.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com",
+    "sameereal@gmail.com"
+  ],
+  "name": "Movies",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61ae3a7fe9086529b4927c82"
+      },
+      "itemName": "Just Mercy",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4160e9086529b4928059"
+      },
+      "itemName": "Shaolin Soccer",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae4cb1e9086529b4928571"
+      },
+      "itemName": "Spiderman: No Way Home",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adca4aa2c89f1988571e06"
+      },
+      "itemName": "Your Name",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae3a7fe9086529b4927c83"
+      },
+      "itemName": "Black Panther",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4160e9086529b492805a"
+      },
+      "itemName": "God of Cookery",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4cb1e9086529b4928572"
+      },
+      "itemName": "Spiderman: Far From Home",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adca4aa2c89f1988571e07"
+      },
+      "itemName": "The Dark Knight",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae4160e9086529b492805b"
+      },
+      "itemName": "Fight Club",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae3a7fe9086529b4927c84"
+      },
+      "itemName": "Green Book",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adca4aa2c89f1988571e08"
+      },
+      "itemName": "Harry Potter",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae4cb1e9086529b4928573"
+      },
+      "itemName": "Spiderman: Into the Spiderverse",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adca4aa2c89f1988571e09"
+      },
+      "itemName": "Inception",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae3a7fe9086529b4927c85"
+      },
+      "itemName": "Mrs. Doubtfire",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4160e9086529b492805c"
+      },
+      "itemName": "Parasite",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae4cb1e9086529b4928574"
+      },
+      "itemName": "Spiderman 2",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adca4aa2c89f1988571e0a"
+      },
+      "itemName": "Interstellar",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae3a7fe9086529b4927c86"
+      },
+      "itemName": "Spider-Man: Homecoming",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae4cb1e9086529b4928575"
+      },
+      "itemName": "Spiderman 3",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae4160e9086529b492805d"
+      },
+      "itemName": "Wall-E",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 1,
+  "dislikeCount": 6,
+  "viewCount": 8,
+  "updatedDate": {
+    "$date": "2021-12-06T17:47:29.951Z"
+  },
+  "comment": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:31:06.146Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:46.091Z"
+  },
+  "__v": 10
+},{
+  "_id": {
+    "$oid": "61adca4ba2c89f1988571e17"
+  },
+  "items": [
+    "Comfortably Numb",
+    "Shine On You Crazy Diamond",
+    "Wish You Were Here",
+    "Time",
+    "Money"
+  ],
+  "likeList": [
+    "a@gmail.com"
+  ],
+  "dislikeList": [
+    "afurey@email.com"
+  ],
+  "name": "Pink Lloyd Songs",
+  "ownerEmail": "adit.anand03@gmail.com",
+  "userName": "adit-adand",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:31:07.344Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:30:24.351Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:31:47.205Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adca73a2c89f1988571e26"
+  },
+  "items": [
+    "Comfortably Numb",
+    "Gunner's Dream",
+    "Shine On You Crazy Diamond",
+    "Time",
+    "Paranoid Eyes"
+  ],
+  "likeList": [
+    "afurey@email.com",
+    "a@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com",
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [
+    "adit.anand03@gmail.com",
+    "jattam@gmail.com",
+    "jon@gmail.com"
+  ],
+  "name": "Pink Lloyd Songs",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61adca73a2c89f1988571e27"
+      },
+      "itemName": "Comfortably Numb",
+      "score": 9
+    },
+    {
+      "_id": {
+        "$oid": "61adcc77a2c89f1988572036"
+      },
+      "itemName": "Gunner's Dream",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adca73a2c89f1988571e28"
+      },
+      "itemName": "Shine On You Crazy Diamond",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adca73a2c89f1988571e2a"
+      },
+      "itemName": "Time",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adcc77a2c89f1988572037"
+      },
+      "itemName": "Paranoid Eyes",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adca73a2c89f1988571e29"
+      },
+      "itemName": "Wish You Were Here",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adca73a2c89f1988571e2b"
+      },
+      "itemName": "Money",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 5,
+  "dislikeCount": 3,
+  "viewCount": 9,
+  "updatedDate": {
+    "$date": "2021-12-06T08:40:23.329Z"
+  },
+  "comment": [
+    {
+      "_id": {
+        "$oid": "61ae4213e9086529b4928135"
+      },
+      "commentText": "Never even heard of Pink Lloyd",
+      "userName": "jchan"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-12-06T08:31:47.208Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:46.552Z"
+  },
+  "__v": 10
+},{
+  "_id": {
+    "$oid": "61adca74a2c89f1988571e38"
+  },
+  "items": [
+    "Java",
+    "Python",
+    "C#",
+    "C++",
+    "Javascript"
+  ],
+  "likeList": [
+    "adit.anand03@gmail.com",
+    "afurey@email.com",
+    "a@gmail.com"
+  ],
+  "dislikeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Programming Languages",
+  "ownerEmail": "adit.anand03@gmail.com",
+  "userName": "adit-adand",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:31:48.299Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:13:02.394Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:32:19.494Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adca94a2c89f1988571e55"
+  },
+  "items": [
+    "Avatar",
+    "Spongebob",
+    "Parasyte",
+    "Steins;Gate",
+    "Mob Psycho 100"
+  ],
+  "likeList": [
+    "adit.anand03@gmail.com",
+    "a@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [
+    "jon@gmail.com"
+  ],
+  "name": "TV Shows",
+  "ownerEmail": "adit.anand03@gmail.com",
+  "userName": "adit-adand",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 2,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:32:20.836Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:13:02.016Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:33:04.292Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adcac0a2c89f1988571e66"
+  },
+  "items": [
+    "Avatar",
+    "Breaking Bad",
+    "Cosmos",
+    "Dexter",
+    "Spongebob"
+  ],
+  "likeList": [
+    "adit.anand03@gmail.com",
+    "afurey@email.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [
+    "a@gmail.com",
+    "sameereal@gmail.com"
+  ],
+  "name": "TV Shows",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61adcac0a2c89f1988571e67"
+      },
+      "itemName": "Avatar",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae43e2e9086529b49281cc"
+      },
+      "itemName": "Breaking Bad",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adcc9ca2c89f1988572053"
+      },
+      "itemName": "Cosmos",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae43e2e9086529b49281cd"
+      },
+      "itemName": "Dexter",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adcac0a2c89f1988571e68"
+      },
+      "itemName": "Spongebob",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61adcc9ca2c89f1988572054"
+      },
+      "itemName": "The Office",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae43e2e9086529b49281ce"
+      },
+      "itemName": "Hannibal",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adcac0a2c89f1988571e69"
+      },
+      "itemName": "Parasyte",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61adcc9ca2c89f1988572055"
+      },
+      "itemName": "Squid Game",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae43e2e9086529b49281cf"
+      },
+      "itemName": "Daredevil",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adcc9ca2c89f1988572056"
+      },
+      "itemName": "Lupin",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adcac0a2c89f1988571e6a"
+      },
+      "itemName": "Steins;Gate",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adcc9ca2c89f1988572057"
+      },
+      "itemName": "Attack on Titan",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae43e2e9086529b49281d0"
+      },
+      "itemName": "Bojack Horseman",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61adcac0a2c89f1988571e6b"
+      },
+      "itemName": "Mob Psycho 100",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 5,
+  "dislikeCount": 2,
+  "viewCount": 9,
+  "updatedDate": {
+    "$date": "2021-12-06T17:09:54.026Z"
+  },
+  "comment": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:33:04.295Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:47.498Z"
+  },
+  "__v": 9
+},{
+  "_id": {
+    "$oid": "61adcb17a2c89f1988571ee8"
+  },
+  "items": [
+    "Chicken",
+    "Cow",
+    "Pig",
+    "Alligator",
+    "Lamb"
+  ],
+  "likeList": [
+    "afurey@email.com",
+    "a@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Animals to Eat",
+  "ownerEmail": "afurey@email.com",
+  "userName": "fistuvfurey",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:34:31.772Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:30:17.954Z"
+  },
+  "__v": 3,
+  "publishedDate": {
+    "$date": "2021-12-06T08:35:01.477Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adcb37a2c89f1988571f05"
+  },
+  "items": [
+    "Yankees",
+    "Knicks",
+    "Nets",
+    "Giants",
+    "Golden State Warriors"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "jon@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [
+    "afurey@email.com"
+  ],
+  "name": "Professional Sports Teams",
+  "ownerEmail": "afurey@email.com",
+  "userName": "fistuvfurey",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:35:03.800Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:03.236Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:35:50.616Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adcb66a2c89f1988571f16"
+  },
+  "items": [
+    "Giants",
+    "Nets",
+    "Yankees",
+    "Knicks",
+    "Jets"
+  ],
+  "likeList": [
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com",
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [
+    "afurey@email.com",
+    "a@gmail.com"
+  ],
+  "name": "Professional Sports Teams",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61adcb66a2c89f1988571f1a"
+      },
+      "itemName": "Giants",
+      "score": 7
+    },
+    {
+      "_id": {
+        "$oid": "61adcb66a2c89f1988571f19"
+      },
+      "itemName": "Nets",
+      "score": 7
+    },
+    {
+      "_id": {
+        "$oid": "61adcb66a2c89f1988571f17"
+      },
+      "itemName": "Yankees",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61adcb66a2c89f1988571f18"
+      },
+      "itemName": "Knicks",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae43c0e9086529b49281ae"
+      },
+      "itemName": "Jets",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae43c0e9086529b49281af"
+      },
+      "itemName": "Steelers",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61adcb66a2c89f1988571f1b"
+      },
+      "itemName": "Golden State Warriors",
+      "score": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ae43c0e9086529b49281b0"
+      },
+      "itemName": "Rangers",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 4,
+  "dislikeCount": 2,
+  "viewCount": 7,
+  "updatedDate": {
+    "$date": "2021-12-06T17:09:20.156Z"
+  },
+  "comment": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:35:50.619Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:49.416Z"
+  },
+  "__v": 13
+},{
+  "_id": {
+    "$oid": "61adcb67a2c89f1988571f28"
+  },
+  "items": [
+    "Python",
+    "Java",
+    "Swift",
+    "Javascript",
+    "Kotlin"
+  ],
+  "likeList": [
+    "afurey@email.com",
+    "a@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [],
+  "name": "Programming Languages",
+  "ownerEmail": "afurey@email.com",
+  "userName": "fistuvfurey",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:35:51.717Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:04.214Z"
+  },
+  "__v": 4,
+  "publishedDate": {
+    "$date": "2021-12-06T08:36:17.141Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adcb82a2c89f1988571f45"
+  },
+  "items": [
+    "Goldeneye",
+    "Mortal Kombat",
+    "Call of Duty",
+    "Mario Kart",
+    "Pong"
+  ],
+  "likeList": [
+    "afurey@email.com",
+    "jon@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [],
+  "name": "Games",
+  "ownerEmail": "afurey@email.com",
+  "userName": "fistuvfurey",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:36:18.801Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:04.614Z"
+  },
+  "__v": 6,
+  "publishedDate": {
+    "$date": "2021-12-06T08:36:57.777Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adcbaba2c89f1988571f63"
+  },
+  "items": [
+    "Ireland",
+    "Spain",
+    "New Zealand",
+    "Japan",
+    "Germany"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "jon@gmail.com"
+  ],
+  "dislikeList": [
+    "afurey@email.com",
+    "rahul@sbu.com"
+  ],
+  "name": "Countries to Visit",
+  "ownerEmail": "afurey@email.com",
+  "userName": "fistuvfurey",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 2,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:36:59.709Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:05.636Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:37:26.215Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adcc1ca2c89f1988572001"
+  },
+  "items": [
+    "Cow",
+    "Tuna",
+    "Chicken",
+    "Pig",
+    "Fish"
+  ],
+  "likeList": [
+    "jon@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [
+    "a@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Animals to Eat",
+  "ownerEmail": "a@gmail.com",
+  "userName": "ajeong",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 2,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:38:52.583Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:07.285Z"
+  },
+  "__v": 9,
+  "publishedDate": {
+    "$date": "2021-12-06T08:39:20.088Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adcc3aa2c89f198857201d"
+  },
+  "items": [
+    "Gunner's Dream",
+    "Comfortably Numb",
+    "Paranoid Eyes",
+    "Time",
+    "Shine On You Crazy Diamond"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [],
+  "name": "Pink Lloyd Songs",
+  "ownerEmail": "a@gmail.com",
+  "userName": "ajeong",
+  "published": true,
+  "likeCount": 4,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:39:22.325Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:06.627Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:40:23.331Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adcc78a2c89f1988572044"
+  },
+  "items": [
+    "Cosmos",
+    "The Office",
+    "Squid Game",
+    "Lupin",
+    "Attack on Titan"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [
+    "rahul@sbu.com"
+  ],
+  "name": "TV Shows",
+  "ownerEmail": "a@gmail.com",
+  "userName": "ajeong",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 2,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T08:40:24.426Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:08.856Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T08:41:00.328Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae3526e9086529b4927c71"
+  },
+  "items": [
+    "Just Mercy",
+    "Black Panther",
+    "Green Book",
+    "Mrs. Doubtfire",
+    "Spider-Man: Homecoming"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "jon@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Movies",
+  "ownerEmail": "a@gmail.com",
+  "userName": "ajeong",
+  "published": true,
+  "likeCount": 3,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:07:02.843Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:42:08.428Z"
+  },
+  "__v": 5,
+  "publishedDate": {
+    "$date": "2021-12-06T16:29:51.710Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae3c9be9086529b4927daa"
+  },
+  "items": [
+    "Chocolate Mousse",
+    "Chiffon",
+    "Red Velvet",
+    "Ice Cream",
+    "Pound"
+  ],
+  "likeList": [
+    "a@gmail.com",
+    "jattam@gmail.com",
+    "lincolnnguyen18@email.com",
+    "rahul@sbu.com",
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [
+    "jon@gmail.com"
+  ],
+  "name": "Favorite Cakes",
+  "communityItems": [
+    {
+      "_id": {
+        "$oid": "61ae3c9be9086529b4927dad"
+      },
+      "itemName": "Chocolate Mousse",
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ae3c9be9086529b4927dac"
+      },
+      "itemName": "Chiffon",
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ae3c9be9086529b4927dab"
+      },
+      "itemName": "Red Velvet",
+      "score": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ae3c9be9086529b4927dae"
+      },
+      "itemName": "Ice Cream",
+      "score": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ae3c9be9086529b4927daf"
+      },
+      "itemName": "Pound",
+      "score": 1
+    }
+  ],
+  "communityList": true,
+  "likeCount": 5,
+  "dislikeCount": 1,
+  "viewCount": 6,
+  "updatedDate": {
+    "$date": "2021-12-06T16:39:53.640Z"
+  },
+  "comment": [
+    {
+      "_id": {
+        "$oid": "61ae4204e9086529b492812c"
+      },
+      "commentText": "Why isn't ice cream at the top?",
+      "userName": "jchan"
+    },
+    {
+      "_id": {
+        "$oid": "61ae3f4de9086529b4927f1e"
+      },
+      "commentText": "Chocolate mousse is so good.",
+      "userName": "jattam"
+    },
+    {
+      "_id": {
+        "$oid": "61ae3e45e9086529b4927eb3"
+      },
+      "commentText": "I'm a big cake fan!",
+      "userName": "ajeong"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-12-06T16:38:51.967Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:50.824Z"
+  },
+  "__v": 13
+},{
+  "_id": {
+    "$oid": "61ae3ca4e9086529b4927dcb"
+  },
+  "items": [
+    "Chocolate",
+    "Sponge",
+    "Coconut",
+    "Orange",
+    "Lemon"
+  ],
+  "likeList": [
+    "a@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Favorite Cakes",
+  "ownerEmail": "a@gmail.com",
+  "userName": "ajeong",
+  "published": false,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 1,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:39:00.568Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:43:05.585Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "61ae3cbbe9086529b4927de6"
+  },
+  "items": [
+    "Chocolate Mousse",
+    "Chiffon",
+    "Red Velvet",
+    "Ice Cream",
+    "Pound"
+  ],
+  "likeList": [
+    "jon@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Favorite Cakes",
+  "ownerEmail": "a@gmail.com",
+  "userName": "ajeong",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 1,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:39:23.662Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:58.224Z"
+  },
+  "__v": 4,
+  "publishedDate": {
+    "$date": "2021-12-06T16:39:53.643Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae3d1fe9086529b4927e20"
+  },
+  "items": [
+    "TFT",
+    "League",
+    "Osu",
+    "Genshin Impact",
+    "Minecraft"
+  ],
+  "likeList": [],
+  "dislikeList": [
+    "a@gmail.com"
+  ],
+  "name": "Games",
+  "ownerEmail": "a@gmail.com",
+  "userName": "ajeong",
+  "published": false,
+  "likeCount": 0,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 1,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:41:03.719Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:43:07.772Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "61ae3faee9086529b4927f51"
+  },
+  "items": [
+    "Chicken",
+    "Fish",
+    "Shrimp",
+    "Cow",
+    "Duck"
+  ],
+  "likeList": [
+    "jattam@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [
+    "jon@gmail.com"
+  ],
+  "name": "Animals to Eat",
+  "ownerEmail": "jattam@gmail.com",
+  "userName": "jattam",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 1,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:51:58.489Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:13:14.336Z"
+  },
+  "__v": 4,
+  "publishedDate": {
+    "$date": "2021-12-06T16:52:45.166Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae3fe1e9086529b4927f6e"
+  },
+  "items": [
+    "TFT",
+    "Valorant",
+    "Pokemon",
+    "Osu",
+    "Minecraft"
+  ],
+  "likeList": [
+    "jattam@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [
+    "rahul@sbu.com"
+  ],
+  "name": "Games",
+  "ownerEmail": "jattam@gmail.com",
+  "userName": "jattam",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 6,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:52:49.503Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:57.037Z"
+  },
+  "__v": 4,
+  "publishedDate": {
+    "$date": "2021-12-06T16:53:22.576Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4097e9086529b4927fd9"
+  },
+  "items": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "likeList": [],
+  "dislikeList": [],
+  "name": "Untitled3",
+  "ownerEmail": "jattam@gmail.com",
+  "userName": "jattam",
+  "published": false,
+  "likeCount": 0,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:55:51.859Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T16:55:51.859Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ae40f0e9086529b4927ff3"
+  },
+  "items": [
+    "Korea",
+    "Germany",
+    "Hong Kong",
+    "Greenland",
+    "Bangladesh"
+  ],
+  "likeList": [
+    "jon@gmail.com",
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [],
+  "name": "Countries to Visit",
+  "ownerEmail": "jon@gmail.com",
+  "userName": "jchan",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:57:20.698Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:56.561Z"
+  },
+  "__v": 3,
+  "publishedDate": {
+    "$date": "2021-12-06T16:58:09.963Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4123e9086529b492802c"
+  },
+  "items": [
+    "Tomato",
+    "Rice",
+    "Egg",
+    "Pork",
+    "Onions"
+  ],
+  "likeList": [
+    "jon@gmail.com"
+  ],
+  "dislikeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Foods",
+  "ownerEmail": "jon@gmail.com",
+  "userName": "jchan",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:58:11.382Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:13:15.368Z"
+  },
+  "__v": 3,
+  "publishedDate": {
+    "$date": "2021-12-06T16:58:30.125Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4137e9086529b492804a"
+  },
+  "items": [
+    "Shaolin Soccer",
+    "God of Cookery",
+    "Fight Club",
+    "Parasite",
+    "Wall-E"
+  ],
+  "likeList": [
+    "jon@gmail.com",
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [],
+  "name": "Movies",
+  "ownerEmail": "jon@gmail.com",
+  "userName": "jchan",
+  "published": true,
+  "likeCount": 2,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 6,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:58:31.180Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:14:34.777Z"
+  },
+  "__v": 3,
+  "publishedDate": {
+    "$date": "2021-12-06T16:59:12.147Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4161e9086529b492806a"
+  },
+  "items": [
+    "Java",
+    "Javascript",
+    "Python",
+    "C#",
+    "Kotlin"
+  ],
+  "likeList": [
+    "jon@gmail.com"
+  ],
+  "dislikeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "name": "Programming Languages",
+  "ownerEmail": "jon@gmail.com",
+  "userName": "jchan",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 3,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T16:59:13.238Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:14:31.924Z"
+  },
+  "__v": 3,
+  "publishedDate": {
+    "$date": "2021-12-06T16:59:37.980Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4194e9086529b4928083"
+  },
+  "items": [
+    "yankees",
+    "mets",
+    "dunno yet",
+    "dont know",
+    "not sure"
+  ],
+  "likeList": [],
+  "dislikeList": [],
+  "name": "professional sports teams",
+  "ownerEmail": "jon@gmail.com",
+  "userName": "jchan",
+  "published": false,
+  "likeCount": 0,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:00:04.129Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:01:02.637Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61ae430de9086529b4928162"
+  },
+  "items": [
+    "Doraemon",
+    "harry potter",
+    "Spice and Wolf",
+    "Mushoku Tensei",
+    "To Kill a Mockingbird"
+  ],
+  "likeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [],
+  "name": "Books",
+  "ownerEmail": "lincolnnguyen18@email.com",
+  "userName": "lincolnnguyen18",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 8,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:06:21.019Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:14:27.785Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:08:04.830Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4375e9086529b4928180"
+  },
+  "items": [
+    "Soylent",
+    "Rice",
+    "Tofu",
+    "Spam",
+    "Eggs"
+  ],
+  "likeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [],
+  "name": "Foods",
+  "ownerEmail": "lincolnnguyen18@email.com",
+  "userName": "lincolnnguyen18",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 2,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:08:05.996Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:14:23.521Z"
+  },
+  "__v": 4,
+  "publishedDate": {
+    "$date": "2021-12-06T17:08:28.183Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae438de9086529b492819d"
+  },
+  "items": [
+    "Giants",
+    "Nets",
+    "Jets",
+    "Steelers",
+    "Rangers"
+  ],
+  "likeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [],
+  "name": "professional sports teams",
+  "ownerEmail": "lincolnnguyen18@email.com",
+  "userName": "lincolnnguyen18",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 1,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:08:29.199Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:14:21.453Z"
+  },
+  "__v": 6,
+  "publishedDate": {
+    "$date": "2021-12-06T17:09:20.159Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae43c1e9086529b49281bd"
+  },
+  "items": [
+    "Breaking Bad",
+    "Dexter",
+    "Hannibal",
+    "Daredevil",
+    "Bojack Horseman"
+  ],
+  "likeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [],
+  "name": "tV SHOws",
+  "ownerEmail": "lincolnnguyen18@email.com",
+  "userName": "lincolnnguyen18",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 4,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:09:21.287Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:14:19.520Z"
+  },
+  "__v": 6,
+  "publishedDate": {
+    "$date": "2021-12-06T17:09:54.028Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4465e9086529b4928272"
+  },
+  "items": [
+    "Kotlin",
+    "Swift",
+    "Java",
+    "Javascript",
+    "Python"
+  ],
+  "likeList": [
+    "lincolnnguyen18@email.com"
+  ],
+  "dislikeList": [],
+  "name": "ProgRAMMING languages",
+  "ownerEmail": "lincolnnguyen18@email.com",
+  "userName": "lincolnnguyen18",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 3,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:12:05.704Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:14:16.842Z"
+  },
+  "__v": 6,
+  "publishedDate": {
+    "$date": "2021-12-06T17:12:34.358Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4ab9e9086529b49283d1"
+  },
+  "items": [
+    "Cosmos",
+    "The Giver",
+    "Atomic Habits",
+    "Diary of a Wimpy Kid",
+    "Great Expectations"
+  ],
+  "likeList": [],
+  "dislikeList": [
+    "rahul@sbu.com"
+  ],
+  "name": "Books",
+  "ownerEmail": "rahul@sbu.com",
+  "userName": "rdhillon",
+  "published": true,
+  "likeCount": 0,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:39:05.666Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:46.240Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:39:35.762Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4ad8e9086529b49283ee"
+  },
+  "items": [
+    "Japan",
+    "Korea",
+    "Singapore",
+    "Sweden",
+    "Finland"
+  ],
+  "likeList": [
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [],
+  "name": "Countries to Visit",
+  "ownerEmail": "rahul@sbu.com",
+  "userName": "rdhillon",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:39:36.992Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:45.818Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:40:09.237Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4afae9086529b492840a"
+  },
+  "items": [
+    "Sushi",
+    "Ramen",
+    "Poke",
+    "Burrito",
+    "Pasta"
+  ],
+  "likeList": [],
+  "dislikeList": [
+    "rahul@sbu.com"
+  ],
+  "name": "Foods",
+  "ownerEmail": "rahul@sbu.com",
+  "userName": "rdhillon",
+  "published": true,
+  "likeCount": 0,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:40:10.227Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:45.423Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:40:33.442Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4b12e9086529b4928429"
+  },
+  "items": [
+    "Dark Souls",
+    "Undertale",
+    "Pokemon Platinum",
+    "Pokemon HGSS",
+    "Super Smash Bros Ultimate"
+  ],
+  "likeList": [],
+  "dislikeList": [
+    "rahul@sbu.com"
+  ],
+  "name": "Games",
+  "ownerEmail": "rahul@sbu.com",
+  "userName": "rdhillon",
+  "published": true,
+  "likeCount": 0,
+  "dislikeCount": 1,
+  "communityList": false,
+  "viewCount": 1,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:40:34.662Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:49.908Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:41:02.951Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4b38e9086529b4928449"
+  },
+  "items": [
+    "Python",
+    "Java",
+    "C++",
+    "C",
+    "Javascript"
+  ],
+  "likeList": [
+    "rahul@sbu.com"
+  ],
+  "dislikeList": [],
+  "name": "Programming Languages",
+  "ownerEmail": "rahul@sbu.com",
+  "userName": "rdhillon",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:41:12.732Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:41:48.098Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:41:43.821Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4c19e9086529b492850a"
+  },
+  "items": [
+    "Chicken",
+    "Cow",
+    "Lamb",
+    "Salmon",
+    "Tuna"
+  ],
+  "likeList": [
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Animals to eat",
+  "ownerEmail": "sameereal@gmail.com",
+  "userName": "samekhan",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:44:57.032Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:36.890Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:45:31.145Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4c3ce9086529b4928526"
+  },
+  "items": [
+    "Russia",
+    "Japan",
+    "Norway",
+    "Brazil",
+    "Korea"
+  ],
+  "likeList": [
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Countries to visit",
+  "ownerEmail": "sameereal@gmail.com",
+  "userName": "samekhan",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:45:32.483Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:36.347Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:46:11.256Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4c64e9086529b4928544"
+  },
+  "items": [
+    "League of Legends",
+    "Genshin Impact",
+    "Valorant",
+    "Pokemon",
+    "Super Smash Bros"
+  ],
+  "likeList": [
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Games",
+  "ownerEmail": "sameereal@gmail.com",
+  "userName": "samekhan",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:46:12.302Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:34.704Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:46:37.757Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ae4c7ee9086529b4928562"
+  },
+  "items": [
+    "Spiderman: No Way Home",
+    "Spiderman: Far From Home",
+    "Spiderman: Into the Spiderverse",
+    "Spiderman 2",
+    "Spiderman 3"
+  ],
+  "likeList": [
+    "sameereal@gmail.com"
+  ],
+  "dislikeList": [],
+  "name": "Movies",
+  "ownerEmail": "sameereal@gmail.com",
+  "userName": "samekhan",
+  "published": true,
+  "likeCount": 1,
+  "dislikeCount": 0,
+  "communityList": false,
+  "viewCount": 0,
+  "comment": [],
+  "communityItems": [],
+  "createdAt": {
+    "$date": "2021-12-06T17:46:38.926Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-06T17:47:33.886Z"
+  },
+  "__v": 2,
+  "publishedDate": {
+    "$date": "2021-12-06T17:47:29.953Z"
+  }
+}]
