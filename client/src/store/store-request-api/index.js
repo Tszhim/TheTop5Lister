@@ -7,7 +7,7 @@
     to use when sending JSON back and forth and it`s a Promise-
     based API which helps a lot with asynchronous communication.
     
-    @author McKilla Gorilla
+    @author Tszhim Chan
 */
 
 import axios from 'axios'
@@ -40,8 +40,9 @@ export const createTop5List = (newListName, newItems, userEmail, userName,
     })
 }
 export const deleteTop5ListById = (id) => api.delete(`/top5list/${id}`)
+
 export const getTop5ListById = (id) => api.get(`/top5list/${id}`)
-//export const getTop5ListPairs = () => api.get(`/top5listpairs/`)
+
 export const getTop5ListPairs = (ownerEmail, communityList, nameSearch, sorting, published) => {
     return api.post(`/top5listpairs/`, {
         // SPECIFY THE PAYLOAD
@@ -107,16 +108,14 @@ export const addTop5ListCommentById = (id, commentText) => {
     })
 }
 
-
-/*
-export const LikeTop5ListById = (id, userEmail, like) => {
-    return api.put(`/top5listLike/${id}`, {
-        top5listid: id,
-        Email: userEmail,
-        like: like
+export const checkPublishListNameExist = (listName, email) => {
+    return api.post('/publishListNameExist/', {
+        // SPECIFY THE PAYLOAD
+        listName: listName,
+        email: email
     })
-}
-*/
+} 
+
 export const LikeTop5ListById = (id) => api.get(`/top5listLike/${id}`)
 
 export const UndoLikeTop5ListById = (id) => api.get(`/top5listUndoLike/${id}`)
@@ -136,6 +135,7 @@ const apis = {
     getTop5ListPairsAll,
     getTop5ListPairsUser,
     getTop5ListPairsComm,
+    checkPublishListNameExist,
     LikeTop5ListById,
     UndoLikeTop5ListById,
     DislikeTop5ListById,

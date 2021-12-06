@@ -3,9 +3,9 @@ import { GlobalStoreContext } from '../store'
 import { Typography } from '@mui/material'
 
 /*
-    Our Status bar React component goes at the bottom of our UI.
+    The Status bar React component goes at the bottom of our UI.
     
-    @author McKilla Gorilla
+    @author Tszhim Chan
 */
 function Statusbar() {
     const { store } = useContext(GlobalStoreContext);

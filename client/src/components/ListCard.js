@@ -3,7 +3,6 @@ import { GlobalStoreContext } from '../store'
 import AuthContext from '../auth'
 import Box from '@mui/material/Box';
 import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
 import IconButton from '@mui/material/IconButton';
 import ListItem from '@mui/material/ListItem';
 import TextField from '@mui/material/TextField';
@@ -13,21 +12,18 @@ import ThumbDown from '@mui/icons-material/ThumbDown';
 import Button from '@mui/material/Button';
 import Collapse from '@mui/material/Collapse';
 import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import StarBorder from '@mui/icons-material/StarBorder';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
 /*
-    This is a card in our list of top 5 lists. It lets select
-    a list for editing and it has controls for changing its 
-    name or deleting it.
+    This is a card in our list of top 5 lists. It displays the list's 
+    name, author, publish date (if published), like and dislike count,
+    view count, can be expanded to show comments and items, and
+    allows editing (if not published).
     
-    @author McKilla Gorilla
+    @author Tszhim Chan
 */
 function ListCard(props) {
     const { auth } = useContext(AuthContext);
@@ -54,7 +50,6 @@ function ListCard(props) {
     const handleClick = (event, id) => {
         console.log('handleClick: ' + event.target.id);
         if(!open) {
-            //alert('store.addTop5ListViewById');
             store.addTop5ListViewById(id);
 
         }
@@ -64,31 +59,20 @@ function ListCard(props) {
 
 
     function handleToggleEdit(event, id) {
-        // >> modified
-        //event.stopPropagation();
-        //toggleEdit();
         if(auth.loggedIn) {
             if(!idNamePair.top5List.published) {
                 store.setCurrentList(id);
             }
         }
-        // << modified
     }
 
     function handleLikeList(event, id) {
-        // >> modified
-        //alert('Like: ' + id);
-        //store.LikeTop5ListById(id);
-        if(auth.loggedIn) {
-            // Is list already disliked?        
+        if(auth.loggedIn) {       
             if(!alreadyDisliked) {
-                // List is not disliked. Is the list liked?
                 if(alreadyLiked) {
-                    // List is not disliked and it is liked. Therefore, undo like.
                     store.UndoLikeTop5ListById(id);
                 }
                 else {
-                    // List is not disliked and it is not liked. Therefore, like.
                     store.LikeTop5ListById(id); 
                 }
             }
@@ -97,12 +81,9 @@ function ListCard(props) {
                 store.flipDislikeToLike(id);
             }
         }
-        // << modified  
     }
 
     function handleDisLikeList(event, id) {
-        // >> modified
-        //alert('DisLike: ' + id);
         if(auth.loggedIn) {
             if(!alreadyLiked) {
                 if(alreadyDisliked) {
@@ -116,7 +97,6 @@ function ListCard(props) {
                 store.flipLikeToDislike(id); 
             }
         }
-        // << modified
     }
 
     function toggleEdit() {
@@ -133,7 +113,6 @@ function ListCard(props) {
         _id = ("" + _id).substring("delete-list-".length);
 
         if(auth.loggedIn) {
-            //if(idNamePair.top5List.ownerEmail == auth.user.email) {
             if(store.mode == 0) {
                 store.markListForDeletion(id);
             }
@@ -153,7 +132,6 @@ function ListCard(props) {
 
     function handleCommentKeyPress(event,id) {
         if (event.code === "Enter") {
-            //alert('handleCommentKeyPress ' + auth.loggedIn);
             let text = event.target.value;
             
             if(auth.loggedIn) {

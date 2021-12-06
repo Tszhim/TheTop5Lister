@@ -8,7 +8,6 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 
 import { useContext, useState } from 'react';
 import { GlobalStoreContext } from '../store'
-import { gridClasses } from '@mui/material';
 
 export default function MenuListComposition() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -22,8 +21,7 @@ export default function MenuListComposition() {
   };
 
   const handleSortNewest = (event) => {
-    //store.setSortNewest();
-    
+
     let sortedOption = {publishedDate: -1};
     if(store.mode == 0) {
         store.loadHomeLists(store.filteredString, sortedOption);        
@@ -48,9 +46,8 @@ export default function MenuListComposition() {
   }
 
   const handleSortOldest = (event) => {
-    //store.setSortOldest();
-
     let sortedOption = {publishedDate: 1};
+
     if(store.mode == 0) {
         store.loadHomeLists(store.filteredString, sortedOption);        
     }
@@ -74,9 +71,8 @@ export default function MenuListComposition() {
   }
 
   const handleSortViews = (event) => {
-    //store.setSortViews();
-
     let sortedOption = {viewCount: -1};
+
     if(store.mode == 0) {
         store.loadHomeLists(store.filteredString, sortedOption);        
     }
@@ -100,9 +96,8 @@ export default function MenuListComposition() {
   }
 
   const handleSortLikes = (event) => {
-    //store.setSortLikes();
-
     let sortedOption = {likeCount: -1};
+
     if(store.mode == 0) {
         store.loadHomeLists(store.filteredString, sortedOption);        
     }
@@ -126,9 +121,8 @@ export default function MenuListComposition() {
   }
 
   const handleSortDislikes = (event) => {
-    //store.setSortDislikes();
-
     let sortedOption = {dislikeCount: -1};
+
     if(store.mode == 0) {
         store.loadHomeLists(store.filteredString, sortedOption);        
     }

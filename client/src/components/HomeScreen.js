@@ -17,7 +17,7 @@ import Statusbar from './Statusbar.js'
 /*
     This React component lists all the top5 lists in the UI.
     
-    @author McKilla Gorilla
+    @author Tszhim Chan
 */
 const HomeScreen = () => {
     const { store } = useContext(GlobalStoreContext);
@@ -62,7 +62,6 @@ const HomeScreen = () => {
                     onClick={handleCreateNewList}
                     style={{background:'#4192a1'}}
                     size='small'
-
                 >
                     <AddIcon />
                 </Fab>

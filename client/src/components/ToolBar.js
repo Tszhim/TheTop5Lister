@@ -11,11 +11,9 @@ import Home from '@mui/icons-material/Home';
 import People from '@mui/icons-material/People';
 import Person from '@mui/icons-material/Person';
 import ArrowUpward from '@mui/icons-material/ArrowUpward';
-import Sort from '@mui/icons-material/Sort';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -172,7 +170,7 @@ export default function ToolBar() {
                                 id='undo-button'
                                 onClick={handleLoadHomeList}
                                 variant="contained"
-                                disabled={store.isItemEditActive || auth.loggedInAsGuest}
+                                disabled={store.isItemEditActive || store.isListNameEditActive || auth.loggedInAsGuest}
                                 color={store.mode == 0 ? "primary": "secondary"}>
                                 <Home />
                             </Button>
@@ -180,7 +178,7 @@ export default function ToolBar() {
                                 id='undo-button'
                                 onClick={handleLoadAllList}
                                 variant="contained"
-                                disabled={store.isItemEditActive}
+                                disabled={store.isItemEditActive || store.isListNameEditActive}
                                 color={store.mode == 1 ? "primary": "secondary"}>
                                 <People />
                             </Button>
@@ -188,7 +186,7 @@ export default function ToolBar() {
                                 id='undo-button'
                                 onClick={handleLoadUserList}
                                 variant="contained"
-                                disabled={store.isItemEditActive}
+                                disabled={store.isItemEditActive || store.isListNameEditActive}
                                 color={store.mode == 2 ? "primary": "secondary"}>
                                 <Person />
                             </Button>
@@ -196,7 +194,7 @@ export default function ToolBar() {
                                 id='undo-button'
                                 onClick={handleLoadCommList}
                                 variant="contained"
-                                disabled={store.isItemEditActive}
+                                disabled={store.isItemEditActive || store.isListNameEditActive}
                                 color={store.mode == 3 ? "primary": "secondary"}>
                                 <ArrowUpward />
                             </Button> 

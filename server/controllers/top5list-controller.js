@@ -81,7 +81,10 @@ deleteTop5List = async (req, res) => {
             async function asyncFindCommList(top5List) {
                 console.log('top5List.name: ' + top5List.name);
         
-                await Top5List.findOne({ name: top5List.name, communityList: true }, (err, top5ListComm) => {
+                // >> modified 120521
+                //await Top5List.findOne({ name: top5List.name, communityList: true }, (err, top5ListComm) => {
+                await Top5List.findOne({ name: new RegExp('^' +top5List.name + '$','i'), communityList: true }, (err, top5ListComm) => {
+                // << modified 120521
                     if (err) {
                         console.log('find commList error');
                     }
@@ -135,16 +138,7 @@ deleteTop5List = async (req, res) => {
                                                 "",
                                                 "",
                                                 ""];                   
-                        }
-                        
-               
-                        //console.log(top5ListComm.items[0]);
-                        //console.log(top5ListComm.items[1]);
-                        //console.log(top5ListComm.items[2]);
-                        //console.log(top5ListComm.items[3]);
-                        //console.log(top5ListComm.items[4]);
-        
-                        //top5ListComm.items.push('test');       
+                        }      
                     }    
 
             // DOES THIS LIST BELONG TO THIS USER?
@@ -154,10 +148,6 @@ deleteTop5List = async (req, res) => {
                     console.log("req.userId: " + req.userId);
                     if (user._id == req.userId) {
                         console.log("correct user!");
-                        
-                        //Top5List.findOneAndDelete({ _id: req.params.id }, () => {
-                        //    return res.status(200).json({});
-                        //}).catch(err => console.log(err))
                         
                         top5ListComm.save()
                                         .then(() => {
@@ -223,33 +213,16 @@ getTop5ListById = async (req, res) => {
 getTop5ListPairs = async (req, res) => {
     //console.log("getTop5ListPairs");
     const body = req.body;
-    console.log("getTop5ListPairs: " + JSON.stringify(body));
-    console.log("req.body.filteredString, req.body.sortedString: " + req.body.ownerEmail + '*' + req.body.communityList + '*' + req.body.nameSearch + '*' + req.body.sorting + '*' + req.body.published);
-
-    //let filteredString = 'ownerEmail: "h@i.com", communityList:false, name: {$regex: /^U/i}';
-    //let ownerEmailStr = "h@i.com";
-    //let communityListStr = false;
-    //let nameFind = 'U';
-    //console.log("nameFind: " + nameFind);
-    //let filteredString = req.body.filteredString;
-
-    //let sortStr = '{publishedDate: 1}';
-    //let sortStr1 = {publishedDate: -1};
 
     await User.findOne({ _id: req.userId }, (err, user) => {
         console.log("find user with id " + req.userId);
         async function asyncFindList(email) {
             console.log("find all Top5Lists owned by " + email);
-            //await Top5List.find({ ownerEmail: email }, (err, top5Lists) => {
-            //await Top5List.find({ ownerEmail: email }, (err, top5Lists) => {
-
-            //ownerEmail: req.body.ownerEmail,
             
             await Top5List.find({ 
                                 ownerEmail: req.body.ownerEmail,
                                 communityList: req.body.communityList, 
                                 name: new RegExp('^'+req.body.nameSearch,'i')}, (err, top5Lists) => {    
-            //await Top5List.find({filteredString}, (err, top5Lists) => {
                 console.log("found Top5Lists: " + JSON.stringify(top5Lists));
                 if (err) {
                     return res.status(400).json({ success: false, error: err })
@@ -262,62 +235,9 @@ getTop5ListPairs = async (req, res) => {
                 }
                 else {
                     console.log("Send the Top5List pairs");
-                    // PUT ALL THE LISTS INTO ID, NAME PAIRS
                     let pairs = [];
-                    let like = false;
                     for (let key in top5Lists) {
                         let list = top5Lists[key];
-                        // >> modified
-                        //let pair = {
-                        //    _id: list._id,
-                        //    name: list.name
-                        //};
-                        
-                        // >> modified                   
-
-                        /*
-                        async function asyncFindLike(list, email, like) { 
-                            try {  
-                               
-                              const existingLike = await LikeList.findOne({ top5listid: list._id,  Email: email, like: true});
-                              if (existingLike) {
-                                list.like = true;
-                                //console.log('like true');
-                              }
-                              else {
-                                list.like = false;     
-                                //console.log('like false');     
-                              }
-                             
-                              const existingDisLike = await LikeList.findOne({ top5listid: list._id,  Email: email, like: false});
-                              if (existingDisLike) {
-                                list.dislike = true;
-                                //console.log('dislike true');
-                              }
-                              else {
-                                list.dislike = false; 
-                                //console.log('dislike false');     
-                             } 
-
-                             //let pair = {
-                             //   _id: list._id,
-                             //   top5List: list
-                             //};
-                             //pairs.push(pair);
-
-                            } catch (err) {
-                                console.error(err);
-                                res.status(500).send();
-                            }                            
-                        }
-                        asyncFindLike(list,email,like);
-                        */
-
-                        //const existingDisLike = LikeList.findOne({ top5listid: list._id,  Email: email, like: false});
-                        //list.dislike = true; 
-
-                        //console.log('getTop5ListPairs: ' + list._id + '*' + email + '*' + list.like + '*' + list.dislike);                                              
-
                         let pair = {
                             _id: list._id,
                             top5List: list
@@ -335,34 +255,14 @@ getTop5ListPairs = async (req, res) => {
 }
 
 getTop5ListPairsAll = async (req, res) => {
-    //console.log("getTop5ListPairs");
     const body = req.body;
-    console.log("getTop5ListPairsAll: " + JSON.stringify(body));
-    console.log("req.body.filteredString, req.body.sortedString: " + req.body.ownerEmail + '*' + req.body.communityList + '*' + req.body.nameSearch + '*' + req.body.sorting + '*' + req.body.published);
-
-    //let filteredString = 'ownerEmail: "h@i.com", communityList:false, name: {$regex: /^U/i}';
-    //let ownerEmailStr = "h@i.com";
-    //let communityListStr = false;
-    //let nameFind = 'U';
-    //console.log("nameFind: " + nameFind);
-    //let filteredString = req.body.filteredString;
-
-    //let sortStr = '{publishedDate: 1}';
-    //let sortStr1 = {publishedDate: -1};
-
     await User.findOne({ _id: req.userId }, (err, user) => {
         console.log("find user with id " + req.userId);
         async function asyncFindList() {
-            //console.log("find all Top5Lists owned by " + email);
-            //await Top5List.find({ ownerEmail: email }, (err, top5Lists) => {
-            //await Top5List.find({ ownerEmail: email }, (err, top5Lists) => {
-
-            //ownerEmail: req.body.ownerEmail,
             await Top5List.find({ 
                                 published: req.body.published,
                                 communityList: req.body.communityList, 
                                 name: new RegExp('^'+req.body.nameSearch,'i')}, (err, top5Lists) => {    
-            //await Top5List.find({filteredString}, (err, top5Lists) => {
                 console.log("found Top5Lists: " + JSON.stringify(top5Lists));
                 if (err) {
                     return res.status(400).json({ success: false, error: err })
@@ -379,16 +279,10 @@ getTop5ListPairsAll = async (req, res) => {
                     let pairs = [];
                     for (let key in top5Lists) {
                         let list = top5Lists[key];
-                        // >> modified
-                        //let pair = {
-                        //    _id: list._id,
-                        //    name: list.name
-                        //};
                         let pair = {
                             _id: list._id,
                             top5List: list
                         };
-                        // << modified
                         pairs.push(pair);
                     }
                     return res.status(200).json({ success: true, idNamePairs: pairs })
@@ -400,34 +294,14 @@ getTop5ListPairsAll = async (req, res) => {
 }
 
 getTop5ListPairsUser = async (req, res) => {
-    //console.log("getTop5ListPairs");
     const body = req.body;
-    console.log("getTop5ListPairsUser: " + JSON.stringify(body));
-    console.log("req.body.filteredString, req.body.sortedString: " + req.body.ownerEmail + '*' + req.body.communityList + '*' + req.body.nameSearch + '*' + req.body.sorting + '*' + req.body.published);
-
-    //let filteredString = 'ownerEmail: "h@i.com", communityList:false, name: {$regex: /^U/i}';
-    //let ownerEmailStr = "h@i.com";
-    //let communityListStr = false;
-    //let nameFind = 'U';
-    //console.log("nameFind: " + nameFind);
-    //let filteredString = req.body.filteredString;
-
-    //let sortStr = '{publishedDate: 1}';
-    //let sortStr1 = {publishedDate: -1};
-
     await User.findOne({ _id: req.userId }, (err, user) => {
         console.log("find user with id " + req.userId);
         async function asyncFindList() {
-            //console.log("find all Top5Lists owned by " + email);
-            //await Top5List.find({ ownerEmail: email }, (err, top5Lists) => {
-            //await Top5List.find({ ownerEmail: email }, (err, top5Lists) => {
-
-            //ownerEmail: req.body.ownerEmail,
             await Top5List.find({ 
                                 published: req.body.published,
                                 communityList: req.body.communityList, 
                                 userName: new RegExp('^'+req.body.nameSearch,'i')}, (err, top5Lists) => {    
-            //await Top5List.find({filteredString}, (err, top5Lists) => {
                 console.log("found Top5Lists: " + JSON.stringify(top5Lists));
                 if (err) {
                     return res.status(400).json({ success: false, error: err })
@@ -444,16 +318,10 @@ getTop5ListPairsUser = async (req, res) => {
                     let pairs = [];
                     for (let key in top5Lists) {
                         let list = top5Lists[key];
-                        // >> modified
-                        //let pair = {
-                        //    _id: list._id,
-                        //    name: list.name
-                        //};
                         let pair = {
                             _id: list._id,
                             top5List: list
                         };
-                        // << modified
                         pairs.push(pair);
                     }
                     return res.status(200).json({ success: true, idNamePairs: pairs })
@@ -465,33 +333,13 @@ getTop5ListPairsUser = async (req, res) => {
 }
 
 getTop5ListPairsComm = async (req, res) => {
-    //console.log("getTop5ListPairs");
     const body = req.body;
-    console.log("getTop5ListPairsComm: " + JSON.stringify(body));
-    console.log("req.body.filteredString, req.body.sortedString: " + req.body.ownerEmail + '*' + req.body.communityList + '*' + req.body.nameSearch + '*' + req.body.sorting + '*' + req.body.published);
-
-    //let filteredString = 'ownerEmail: "h@i.com", communityList:false, name: {$regex: /^U/i}';
-    //let ownerEmailStr = "h@i.com";
-    //let communityListStr = false;
-    //let nameFind = 'U';
-    //console.log("nameFind: " + nameFind);
-    //let filteredString = req.body.filteredString;
-
-    //let sortStr = '{publishedDate: 1}';
-    //let sortStr1 = {publishedDate: -1};
-
     await User.findOne({ _id: req.userId }, (err, user) => {
         console.log("find user with id " + req.userId);
         async function asyncFindList() {
-            //console.log("find all Top5Lists owned by " + email);
-            //await Top5List.find({ ownerEmail: email }, (err, top5Lists) => {
-            //await Top5List.find({ ownerEmail: email }, (err, top5Lists) => {
-
-            //ownerEmail: req.body.ownerEmail,
             await Top5List.find({ 
                                 communityList: req.body.communityList, 
                                 name: new RegExp('^'+req.body.nameSearch,'i')}, (err, top5Lists) => {    
-            //await Top5List.find({filteredString}, (err, top5Lists) => {
                 console.log("found Top5Lists: " + JSON.stringify(top5Lists));
                 if (err) {
                     return res.status(400).json({ success: false, error: err })
@@ -504,20 +352,13 @@ getTop5ListPairsComm = async (req, res) => {
                 }
                 else {
                     console.log("Send the Top5List pairs");
-                    // PUT ALL THE LISTS INTO ID, NAME PAIRS
                     let pairs = [];
                     for (let key in top5Lists) {
                         let list = top5Lists[key];
-                        // >> modified
-                        //let pair = {
-                        //    _id: list._id,
-                        //    name: list.name
-                        //};
                         let pair = {
                             _id: list._id,
                             top5List: list
                         };
-                        // << modified
                         pairs.push(pair);
                     }
                     return res.status(200).json({ success: true, idNamePairs: pairs })
@@ -565,15 +406,6 @@ updateTop5List = async (req, res) => {
 
         async function asyncFindTop5List(top5List) {
             console.log('asyncFindTop5List top5List.name: ' + body.top5List.name);
-    
-            /*await Top5List.findOne({ name: body.top5List.name,  ownerEmail: body.top5List.ownerEmail, published: true}, (err, top5ListDup) => {
-                if (top5ListDup) {
-                    console.log('duplicated list name');
-                    return res.status(404).json({
-                        err,
-                        message: 'The same List name is being used!',
-                    })
-                }*/
 
         // DOES THIS LIST BELONG TO THIS USER?
         async function asyncFindUser(list) {
@@ -586,8 +418,6 @@ updateTop5List = async (req, res) => {
 
                     list.name = body.top5List.name;
                     list.items = body.top5List.items;
-                    //list.published = body.top5List.published;
-                    //list.publishedDate = body.top5List.publishedDate;
                     list
                         .save()
                         .then(() => {
@@ -622,10 +452,6 @@ updateTop5List = async (req, res) => {
 
 publishTop5ListById = async (req, res) => {
     const body = req.body
-    console.log("publishTop5List: " + JSON.stringify(body));
-    console.log("req.body.name, req.body.items: " + body.top5List.name + ", " + body.top5List.items);
-
-     // << modified 120221 idNamePair.top5List.dislikeList.indexOf(auth.user.email) < 0
     if (!body) {
         return res.status(400).json({
             success: false,
@@ -645,19 +471,16 @@ publishTop5ListById = async (req, res) => {
         async function asyncFindTop5List(top5List) {
         console.log('asyncFindTop5List top5List.name: ' + body.top5List.name);
 
-        await Top5List.findOne({ name: {$regex: body.top5List.name, $options: 'i'},  ownerEmail: body.top5List.ownerEmail, published: true}, (err, top5ListDup) => {
-            // >> modified 120221
+        await Top5List.findOne({ name: new RegExp('^'+body.top5List.name+ '$','i'),  ownerEmail: body.top5List.ownerEmail, published: true}, (err, top5ListDup) => {
             if (top5ListDup) {
                 console.log('duplicated list name');
                 return res.status(404).json({
                     errorMessage: 'You have a list with that name already.'
                 })
             }
-            // << modified 120221
 
 async function asyncFindCommList(top5List) {
-    console.log('top5List.name: ' + body.top5List.name);
-    await Top5List.findOne({ name: {$regex: body.top5List.name, $options: 'i'}, communityList: true }, (err, top5ListComm) => {
+    await Top5List.findOne({ name: new RegExp('^'+body.top5List.name+ '$','i'), communityList: true }, (err, top5ListComm) => {
         if (err) {
             console.log('find commList error');
         }
@@ -706,7 +529,6 @@ async function asyncFindCommList(top5List) {
                     return -1;
                 } 
                 else if(listA.score === listB.score) {
-                    // >> modified 120221
                     if(listA.itemName < listB.itemName) {
                         return -1;
                     }
@@ -716,27 +538,12 @@ async function asyncFindCommList(top5List) {
                     else {
                         return 0;
                     }
-                    // << modified 120221
                 }
                 else {
                     return 1;
                 }
             });
-
-            console.log(top5ListComm.communityItems[0].itemName);
-            console.log(top5ListComm.communityItems[1].itemName);
-            console.log(top5ListComm.communityItems[2].itemName);
-            console.log(top5ListComm.communityItems[3].itemName);
-            console.log(top5ListComm.communityItems[4].itemName);
-            /*
-            top5ListComm.items[0] = top5ListComm.communityItems[0].itemName;
-            top5ListComm.items[1] = top5ListComm.communityItems[1].itemName;
-            top5ListComm.items[2] = top5ListComm.communityItems[2].itemName;
-            top5ListComm.items[3] = top5ListComm.communityItems[3].itemName;
-            top5ListComm.items[4] = top5ListComm.communityItems[4].itemName;
-            */
-
-            
+                  
             top5ListComm.items = [top5ListComm.communityItems[0].itemName, 
                                     top5ListComm.communityItems[1].itemName,
                                     top5ListComm.communityItems[2].itemName,
@@ -744,14 +551,6 @@ async function asyncFindCommList(top5List) {
                                     top5ListComm.communityItems[4].itemName]
             
             top5ListComm.updatedDate = new Date();
-
-            //console.log(top5ListComm.items[0]);
-            //console.log(top5ListComm.items[1]);
-            //console.log(top5ListComm.items[2]);
-            //console.log(top5ListComm.items[3]);
-            //console.log(top5ListComm.items[4]);
-
-            //top5ListComm.items.push('test');
     }
 
     // DOES THIS LIST BELONG TO THIS USER?
@@ -767,16 +566,9 @@ async function asyncFindCommList(top5List) {
                 list.items = body.top5List.items;
                 list.published = true;
                 list.publishedDate = new Date();
-                //list.published = body.top5List.published;
-                //list.publishedDate = body.top5List.publishedDate;
                 list
                     .save()
                     .then(() => {
-                        //console.log(top5ListComm.items[0]);
-                        //console.log(top5ListComm.items[1]);
-                        //console.log(top5ListComm.items[2]);
-                        //console.log(top5ListComm.items[3]);
-                        //console.log(top5ListComm.items[4]);
 
                         top5ListComm.save()
                                     .then(() => {    
@@ -832,14 +624,11 @@ LikeTop5ListById = async (req, res) => {
 
         // DOES THIS LIST BELONG TO THIS USER?
         async function asyncFindUser(list) {
-            //User.findOne({ email: list.ownerEmail }, (err, user) => {
             User.findOne({ _id: req.userId }, (err, user) => {
                 console.log("user._id: " + user._id);
                 console.log("req.userId: " + req.userId);
                 if (user._id == req.userId) {
                     console.log("correct user! " + user.email);
-
-                    //user.likeList.push(req.params.id);
                     top5List.likeCount = top5List.likeCount + 1;
                     top5List.likeList.push(user.email);
                     user
@@ -886,14 +675,11 @@ UndoLikeTop5ListById = async (req, res) => {
 
         // DOES THIS LIST BELONG TO THIS USER?
         async function asyncFindUser(list) {
-            //User.findOne({ email: list.ownerEmail }, (err, user) => {
             User.findOne({ _id: req.userId }, (err, user) => {
                 console.log("user._id: " + user._id);
                 console.log("req.userId: " + req.userId);
                 if (user._id == req.userId) {
                     console.log("correct user! " + user.email);
-
-                    //user.likeList.push(req.params.id);
                     top5List.likeCount = top5List.likeCount - 1;
                     
                     let idx = top5List.likeList.indexOf(user.email);
@@ -944,14 +730,11 @@ DislikeTop5ListById = async (req, res) => {
 
         // DOES THIS LIST BELONG TO THIS USER?
         async function asyncFindUser(list) {
-            //User.findOne({ email: list.ownerEmail }, (err, user) => {
             User.findOne({ _id: req.userId }, (err, user) => {
                 console.log("user._id: " + user._id);
                 console.log("req.userId: " + req.userId);
                 if (user._id == req.userId) {
                     console.log("correct user! " + user.email);
-
-                    //user.likeList.push(req.params.id);
                     top5List.dislikeCount = top5List.dislikeCount + 1;
                     top5List.dislikeList.push(user.email);
                     user
@@ -998,14 +781,11 @@ UndoDislikeTop5ListById = async (req, res) => {
 
         // DOES THIS LIST BELONG TO THIS USER?
         async function asyncFindUser(list) {
-            //User.findOne({ email: list.ownerEmail }, (err, user) => {
             User.findOne({ _id: req.userId }, (err, user) => {
                 console.log("user._id: " + user._id);
                 console.log("req.userId: " + req.userId);
                 if (user._id == req.userId) {
-                    console.log("correct user! " + user.email);
-
-                    //user.likeList.push(req.params.id);
+                    console.log("correct user! " + user.email);;
                     top5List.dislikeCount = top5List.dislikeCount - 1;
                     
                     let idx = top5List.dislikeList.indexOf(user.email);
@@ -1068,14 +848,6 @@ addTop5ListCommentById = async (req, res) => {
                 console.log("user._id: " + user._id);
                 console.log("req.userId: " + req.userId);
                 if (user._id == req.userId) {
-                    console.log("correct user!");
-                    console.log("req.body.name, req.body.items: " + req.body.name + ", " + req.body.items);
-
-                    //list.name = body.top5List.name;
-                    //list.items = body.top5List.items;
-                    //list.published = body.top5List.published;
-                    //list.publishedDate = body.top5List.publishedDate;
-                    //top5List.comment.push({commentText: req.body.commentText, userName: user.userName});
                     top5List.comment.splice(0,0,{commentText: req.body.commentText, userName: user.userName})
                     list
                         .save()
@@ -1123,17 +895,6 @@ AddTop5ListViewById = async (req, res) => {
 
         // DOES THIS LIST BELONG TO THIS USER?
         async function asyncFindUser(list) {
-
-            //User.findOne({ email: list.ownerEmail }, (err, user) => {
-            // >> modified 120221
-            //User.findOne({ _id: req.userId }, (err, user) => {
-            //    console.log("user._id: " + user._id);
-            //    console.log("req.userId: " + req.userId);
-            //    if (user._id == req.userId) {
-            //        console.log("correct user! " + user.email);
-
-                    //user.likeList.push(req.params.id);
-
                     top5List.viewCount = top5List.viewCount + 1;
 
                     top5List
@@ -1149,36 +910,29 @@ AddTop5ListViewById = async (req, res) => {
                                     })
                                 });
                     
-                    //user
-                    //    .save()
-                    //    .then(() => {
-                    //        top5List
-                    //            .save()
-                    //            .then(() => {
-                    //                return res.status(200).json({
-                    //                    top5List: top5List
-                    //                })
-                    //            })
-                    //            .catch(error => {
-                    //                return res.status(400).json({
-                    //                    errorMessage: 'Top 5 List Not Created!'
-                    //                })
-                    //            })
-                    //    });   
-                                 
-            //    }
-            //    else {
-            //        console.log("incorrect user!");
-            //        return res.status(400).json({ 
-            //            errorMessage: "authentication error" 
-            //        });
-            //    }
-            //});
         }
         asyncFindUser(top5List);
     })   
 }
 
+
+checkPublishListNameExist = async (req, res) => {
+    const body = req.body;
+        await Top5List.findOne({ name: new RegExp('^' + body.listName + '$','i'),  ownerEmail: body.ownerEmail, published: true}, (err, top5ListDup) => {
+        if (top5ListDup) {
+            console.log('duplicated list name');
+           
+            return res.status(200).json({
+                PublishListNameExist: true
+            });
+        }
+        else {
+            return res.status(200).json({
+                PublishListNameExist: false
+            });
+        }
+    })
+}
 
 module.exports = {
     createTop5List,
@@ -1196,5 +950,6 @@ module.exports = {
     UndoDislikeTop5ListById,
     addTop5ListCommentById,
     AddTop5ListViewById,
-    publishTop5ListById
+    publishTop5ListById,
+    checkPublishListNameExist
 }

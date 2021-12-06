@@ -146,21 +146,13 @@ registerUser = async (req, res) => {
         const saltRounds = 10;
         const salt = await bcrypt.genSalt(saltRounds);
         const passwordHash = await bcrypt.hash(password, salt);
-        console.log("passwordHash: " + passwordHash);
-
-        // >> modified
-
         const newUser = new User({
             firstName, lastName, userName, email, passwordHash, userName
         });
-        // << modified
-        
         const savedUser = await newUser.save();
-        console.log("new user saved: " + savedUser._id);
 
         // LOGIN THE USER
         const token = auth.signToken(savedUser._id);
-        console.log("token:" + token);
 
         await res.cookie("token", token, {
             httpOnly: true,
