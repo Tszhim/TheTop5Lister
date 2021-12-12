@@ -24,7 +24,7 @@ Full-stack web application that allows users to build top 5 lists of their choos
 
 ## Running the Project Locally
 1) Clone the project via ```git clone```.
-2) cd into client directory and run ```npm install```via command line.
+2) cd into client directory and run ```npm install``` via command line.
 3) Run ```npm start``` in client directory once node_modules is installed.
 4) cd into server directory and run ```npm install``` via command line.
 5) Run ```nodemon index.js``` in serveer directory once node_modules is installed.
